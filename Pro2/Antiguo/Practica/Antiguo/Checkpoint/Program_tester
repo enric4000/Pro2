@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+touch Test_adgfj.inp
+
+echo "Pones en primer lugar el numero de alfabetos 
+Luego pones el numero de mensajes 
+Luego si pones un 1 podras configurar el mensaje y alfabeto que se codifican si pones cualquer otra cosa el programa se ejecuta por defecto 
+Si has puesto 1 has de poner el alfabeto, el mensaje, la clave, el mensaje codificado."
+
+./Input_Test_programer > Test_adgfj.inp
+
+./program.exe < Test_adgfj.inp

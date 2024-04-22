@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Codificador de mensajes.: Fitxer de Codi Program.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Codificador de mensajes.
+   &#160;<span id="projectnumber">version 1 26-Oct-2022</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Program.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_program_8cc.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef _PROGRAM_CC_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="_program_8cc.html#a9844077078126ddbd0e0cb20f33cec67">    7</a></span>&#160;<span class="preprocessor">#define _PROGRAM_CC_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_alfabetos_8hh.html">CAlfabetos.hh</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_mensajes_8hh.html">CMensajes.hh</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_program_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   17</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_program_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(){</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">int</span> M, A;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">string</span> comand, clave, ida, idm;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    cin &gt;&gt; A;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="class_c_alfabetos.html">CAlfabetos</a> alfas(A);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  cin &gt;&gt; M;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_c_mensajes.html">CMensajes</a> mensas(M);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  cin &gt;&gt; comand;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordflow">while</span>(comand != <span class="stringliteral">&quot;fin&quot;</span>){</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span>(comand == <span class="stringliteral">&quot;nuevo_mensaje&quot;</span> or comand == <span class="stringliteral">&quot;nm&quot;</span>){</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            ida = mensas.<a class="code" href="class_c_mensajes.html#a5cabf2e7c21d34a7f6d3cd29802f341a">nm</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            alfas.<a class="code" href="class_c_alfabetos.html#a33b1738560fcfc4f2b5d4eca83e55bf0">incrementa</a>(ida);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comand == <span class="stringliteral">&quot;nuevo_alfabeto&quot;</span> or comand == <span class="stringliteral">&quot;na&quot;</span>) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            alfas.<a class="code" href="class_c_alfabetos.html#a0f366e18bf0551f2c03485ea8ad13a25">na</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comand == <span class="stringliteral">&quot;borra_mensaje&quot;</span> or comand == <span class="stringliteral">&quot;bm&quot;</span>) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      ida = mensas.<a class="code" href="class_c_mensajes.html#a16a2a87151a673ad31c9b8318b7d2c6d">bm</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      alfas.<a class="code" href="class_c_alfabetos.html#a782c11f0114581041838038eee7e7eb4">decrementa</a>(ida);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comand == <span class="stringliteral">&quot;borra_alfabeto&quot;</span> or comand == <span class="stringliteral">&quot;ba&quot;</span>) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            alfas.<a class="code" href="class_c_alfabetos.html#a6b724d75471beb89b821ac00440c2db5">ba</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comand == <span class="stringliteral">&quot;listar_mensajes&quot;</span> or comand == <span class="stringliteral">&quot;lm&quot;</span>) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      mensas.<a class="code" href="class_c_mensajes.html#aa6bc93dc45b5a692139e49928a6a281f">lm</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comand == <span class="stringliteral">&quot;listar_alfabetos&quot;</span> or comand == <span class="stringliteral">&quot;la&quot;</span>) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      alfas.<a class="code" href="class_c_alfabetos.html#a7b5d18c554a23608c4d75874968f6c6c">la</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comand == <span class="stringliteral">&quot;codificar_sustitucion_guardado&quot;</span> or comand == <span class="stringliteral">&quot;csg&quot;</span>) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      mensas.<a class="code" href="class_c_mensajes.html#a5334ac0b5a75435e34ebc61b7b39c29a">codisusguard</a>(alfas);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comand == <span class="stringliteral">&quot;codificar_sustitucion&quot;</span> or comand == <span class="stringliteral">&quot;cl&quot;</span>) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      mensas.<a class="code" href="class_c_mensajes.html#a8f245f4cf6a042d2d1c720b549eb9b40">codisus</a>(alfas);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comand == <span class="stringliteral">&quot;decodificar_sustitución&quot;</span> or comand == <span class="stringliteral">&quot;ds&quot;</span>) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            alfas.<a class="code" href="class_c_alfabetos.html#a069875636e40201a8097d5e469b6a6c2">decosus</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comand == <span class="stringliteral">&quot;codificar_permutacion_guardado&quot;</span> or comand == <span class="stringliteral">&quot;cpg&quot;</span>) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            mensas.<a class="code" href="class_c_mensajes.html#a9dc4daf9d241ea732592da6845a2f090">codipermuguard</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comand == <span class="stringliteral">&quot;codificar_permutacion&quot;</span> or comand == <span class="stringliteral">&quot;cp&quot;</span>) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            mensas.<a class="code" href="class_c_mensajes.html#a8cf9c93442e47b8a6f469eb8f8c17f04">codipermu</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comand == <span class="stringliteral">&quot;decodificar_permutacion&quot;</span> or comand == <span class="stringliteral">&quot;dp&quot;</span>) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      mensas.<a class="code" href="class_c_mensajes.html#aecbaaae5df1eb54b83860c2f374c6799">decopermu</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    cin &gt;&gt; comand;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="a_c_mensajes_8hh_html"><div class="ttname"><a href="_c_mensajes_8hh.html">CMensajes.hh</a></div><div class="ttdoc">Especificación de la clase conjunto de mensajes.</div></div>
+<div class="ttc" id="aclass_c_mensajes_html_a9dc4daf9d241ea732592da6845a2f090"><div class="ttname"><a href="class_c_mensajes.html#a9dc4daf9d241ea732592da6845a2f090">CMensajes::codipermuguard</a></div><div class="ttdeci">void codipermuguard()</div><div class="ttdoc">Lee el idm y entra a ese mensaje.</div></div>
+<div class="ttc" id="aclass_c_mensajes_html_a5334ac0b5a75435e34ebc61b7b39c29a"><div class="ttname"><a href="class_c_mensajes.html#a5334ac0b5a75435e34ebc61b7b39c29a">CMensajes::codisusguard</a></div><div class="ttdeci">void codisusguard(const CAlfabetos &amp;alfas)</div><div class="ttdoc">Lee el idm y entra a su clase a pedirle char por char y con el char de la misma posición de la clave ...</div></div>
+<div class="ttc" id="aclass_c_alfabetos_html"><div class="ttname"><a href="class_c_alfabetos.html">CAlfabetos</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_alfabetos_8hh_source.html#l00015">CAlfabetos.hh:15</a></div></div>
+<div class="ttc" id="aclass_c_alfabetos_html_a7b5d18c554a23608c4d75874968f6c6c"><div class="ttname"><a href="class_c_alfabetos.html#a7b5d18c554a23608c4d75874968f6c6c">CAlfabetos::la</a></div><div class="ttdeci">void la()</div><div class="ttdoc">Lista todos los alfabetos.</div></div>
+<div class="ttc" id="aclass_c_mensajes_html_a16a2a87151a673ad31c9b8318b7d2c6d"><div class="ttname"><a href="class_c_mensajes.html#a16a2a87151a673ad31c9b8318b7d2c6d">CMensajes::bm</a></div><div class="ttdeci">string bm()</div><div class="ttdoc">Lee un idm, se guarda el ida y borra ese mensaje.</div></div>
+<div class="ttc" id="aclass_c_mensajes_html_a8f245f4cf6a042d2d1c720b549eb9b40"><div class="ttname"><a href="class_c_mensajes.html#a8f245f4cf6a042d2d1c720b549eb9b40">CMensajes::codisus</a></div><div class="ttdeci">void codisus(const CAlfabetos &amp;alfas)</div><div class="ttdoc">Lee el mensaje y entra a su clase a pedirle char por char y con el char de la misma posición de la cl...</div></div>
+<div class="ttc" id="a_c_alfabetos_8hh_html"><div class="ttname"><a href="_c_alfabetos_8hh.html">CAlfabetos.hh</a></div><div class="ttdoc">Especificación de la clase conjunto de alfabetos.</div></div>
+<div class="ttc" id="aclass_c_mensajes_html_aa6bc93dc45b5a692139e49928a6a281f"><div class="ttname"><a href="class_c_mensajes.html#aa6bc93dc45b5a692139e49928a6a281f">CMensajes::lm</a></div><div class="ttdeci">void lm()</div><div class="ttdoc">Lista todos los mensajes.</div></div>
+<div class="ttc" id="aclass_c_alfabetos_html_a6b724d75471beb89b821ac00440c2db5"><div class="ttname"><a href="class_c_alfabetos.html#a6b724d75471beb89b821ac00440c2db5">CAlfabetos::ba</a></div><div class="ttdeci">void ba()</div><div class="ttdoc">Lee un ida y borra ese alfabeto.</div></div>
+<div class="ttc" id="aclass_c_mensajes_html_aecbaaae5df1eb54b83860c2f374c6799"><div class="ttname"><a href="class_c_mensajes.html#aecbaaae5df1eb54b83860c2f374c6799">CMensajes::decopermu</a></div><div class="ttdeci">void decopermu()</div><div class="ttdoc">Lee una ida declara un mensaje, y entra a él.</div></div>
+<div class="ttc" id="aclass_c_mensajes_html_a8cf9c93442e47b8a6f469eb8f8c17f04"><div class="ttname"><a href="class_c_mensajes.html#a8cf9c93442e47b8a6f469eb8f8c17f04">CMensajes::codipermu</a></div><div class="ttdeci">void codipermu()</div><div class="ttdoc">Lee un mensaje, declara un mensaje, y entra a él.</div></div>
+<div class="ttc" id="aclass_c_mensajes_html_a5cabf2e7c21d34a7f6d3cd29802f341a"><div class="ttname"><a href="class_c_mensajes.html#a5cabf2e7c21d34a7f6d3cd29802f341a">CMensajes::nm</a></div><div class="ttdeci">string nm()</div><div class="ttdoc">Lee y añade un mensaje.</div></div>
+<div class="ttc" id="aclass_c_alfabetos_html_a069875636e40201a8097d5e469b6a6c2"><div class="ttname"><a href="class_c_alfabetos.html#a069875636e40201a8097d5e469b6a6c2">CAlfabetos::decosus</a></div><div class="ttdeci">void decosus()</div><div class="ttdoc">Lee el mensaje codificado y el ida y entra a ese alfabeto para decodificarlo.</div></div>
+<div class="ttc" id="aclass_c_mensajes_html"><div class="ttname"><a href="class_c_mensajes.html">CMensajes</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_mensajes_8hh_source.html#l00015">CMensajes.hh:15</a></div></div>
+<div class="ttc" id="aclass_c_alfabetos_html_a33b1738560fcfc4f2b5d4eca83e55bf0"><div class="ttname"><a href="class_c_alfabetos.html#a33b1738560fcfc4f2b5d4eca83e55bf0">CAlfabetos::incrementa</a></div><div class="ttdeci">void incrementa(string ida)</div><div class="ttdoc">Busca el alfabeta ida y incrementa en uno su número de mensajes.</div></div>
+<div class="ttc" id="aclass_c_alfabetos_html_a0f366e18bf0551f2c03485ea8ad13a25"><div class="ttname"><a href="class_c_alfabetos.html#a0f366e18bf0551f2c03485ea8ad13a25">CAlfabetos::na</a></div><div class="ttdeci">void na()</div><div class="ttdoc">Lee y añade un alfabeto.</div></div>
+<div class="ttc" id="aclass_c_alfabetos_html_a782c11f0114581041838038eee7e7eb4"><div class="ttname"><a href="class_c_alfabetos.html#a782c11f0114581041838038eee7e7eb4">CAlfabetos::decrementa</a></div><div class="ttdeci">void decrementa(string ida)</div><div class="ttdoc">Busca el alfabeta ida y decrementa en uno su número de mensajes.</div></div>
+<div class="ttc" id="a_program_8cc_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="_program_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="_program_8cc_source.html#l00017">Program.cc:17</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

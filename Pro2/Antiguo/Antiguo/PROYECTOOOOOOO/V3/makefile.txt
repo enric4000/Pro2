@@ -1,0 +1,34 @@
+OPCIONS = -D_JUDGE_ -D_GLIBCXX_DEBUG -O2 -Wall -Wextra -Werror -Wno-sign-compare -std=c++11
+
+program.exe: program.o torneo.o Ccategorias.o categoria.o circuito.o ranking.o jugador.o
+	g++ -o program.exe program.o torneo.o Ccategorias.o categoria.o circuito.o ranking.o jugador.o
+	rm *.o
+
+torneo.o: torneo.cc Bintre.hh torneo.hh
+	g++ -c torneo.cc $(OPCIONS)
+
+program.o: program.cc BinTreeIOParInt.cc BinTree.hh BinTreeIOParInt.hh ParInt.hh
+	g++ -c program.cc $(OPCIONS)
+
+Ccategorias.o: Ccategorias.cc Ccategorias.hh categoria.cc categoria.hh
+	g++ -c Ccategorias.cc $(OPCIONS)
+
+
+categoria.o: categoria.cc categoria.hh
+	g++ -c categoria.cc $(OPCIONS)
+
+circuito.o: circuito.cc circuito.hh Ccategorias.cc Ccategorias.hh ranking.cc ranking.hh torneo.cc torneo.hh
+	g++ -c circuito.cc $(OPCIONS)
+
+
+ranking.o: ranking.cc ranking.hh jugador.hh jugador.cc
+	g++ -c ranking.cc $(OPCIONS)
+
+
+jugador.o: jugador.cc jugador.hh
+	g++ -c jugador.cc $(OPCIONS)
+
+clean:
+	rm *.o
+	rm *.exe
+	rm *.gch

@@ -1,0 +1,82 @@
+    struct puntos{
+        int ganador;
+        int WM = 0;
+        int LM = 0;
+        int WS = 0;
+        int LS = 0;
+        int WG = 0;
+        int LG = 0;
+
+    };
+
+
+void finalizatorneo(ranking &rank);   
+
+
+
+
+		else if(com == "finalizar_torneo" or com == "ft"){
+
+			cin >> t;
+			circu.ft(rank, t);
+		}
+
+
+
+
+
+
+ void leer_arbolres(BinTree<puntos>& p, string x){
+     
+        int i = 0;
+        while(x != "0"){
+            for(int j = i; i < x.size(); ++j){
+                ++i;
+            }
+        }
+        puntos m;
+        p = BinTree<puntos> (m);
+    }
+
+
+    void torneo::finalizatorneo(ranking &rank){
+        BinTree<puntos> a;
+        string x;
+        puntos p;
+        getline(cin, x);
+        if(x == "0") g +=1;
+        else if(x == "0 0") g +=2;
+
+        if(g == 0){
+            BinTree<puntos> l, d;
+            leer_arbolres(l, x);
+            leer_arbolres(d, x);
+            a = BinTree<puntos>(p, l, d);
+        }
+        else --g;
+        rank = ranking();
+    }
+
+
+
+
+
+
+		/** @brief encuentra t en la lista de j, consulta sus jugadores y las calificaciones en el torneo de estos
+			\pre ranking y nombre del torneo t 
+			\post: saca por la terminal la tabla de los resultados
+		*/
+		void ft(ranking& rank, string t);
+
+void circuito::ft(ranking& rank, string t){
+
+	map<string, torneo>::const_iterator it1 = torneos.find(t);
+	if(it1 == torneos.end()) cout << "error: el torneo no existe";
+	else{
+		
+		torneo to = it1->second;
+		to.finalizatorneo(rank);
+		torneos.erase(it1);
+		torneos.insert(make_pair(t, to));
+	}
+}

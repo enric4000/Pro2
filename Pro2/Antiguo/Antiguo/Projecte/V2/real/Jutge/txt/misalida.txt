@@ -1,0 +1,179 @@
+#consultar_jugador player1
+player1 Rk:1 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+#consultar_jugador player50
+player50 Rk:50 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+#cj player0
+error: el jugador no existe
+#cj player51
+error: el jugador no existe
+#it torneo10
+(((((1.player1 32.player32) (16.player16 17.player17)) ((8.player8 25.player25) (9.player9 24.player24))) (((4.player4 29.player29) (13.player13 20.player20)) ((5.player5 28.player28) (12.player12 21.player21)))) ((((2.player2 31.player31) (15.player15 18.player18)) ((7.player7 26.player26) (10.player10 23.player23))) (((3.player3 30.player30) (14.player14 19.player19)) ((6.player6 27.player27) (11.player11 22.player22)))))
+#it torneo4
+(((1.player1 8.player8) (4.player4 5.player5)) ((2.player2 7.player7) (3.player3 6.player6)))
+#it torneo3
+error: el jugador no existe
+//no se que pasa si se repetirá el mensaje o que
+#it torneo 55
+error:el torneo no existe
+#listar_categorias
+4 8
+Categoria1 2000 1200 720 360 180 90 45 10
+Categoria2 1000 600 360 180 90 45 25 10
+Categoria3 500 300 180 90 45 20 0 0
+Categoria4 250 150 90 45 20 0 0 0
+#listar_torneos
+50
+torneo1 1
+torneo2 1
+torneo3 1
+torneo4 1
+torneo5 1
+torneo6 1
+torneo7 1
+torneo8 1
+torneo9 1
+torneo10 1
+torneo11 1
+torneo12 1
+torneo13 2
+torneo14 2
+torneo15 2
+torneo16 2
+torneo17 2
+torneo18 2
+torneo19 2
+torneo20 2
+torneo21 2
+torneo22 2
+torneo23 2
+torneo24 2
+torneo25 2
+torneo26 3
+torneo27 3
+torneo28 3
+torneo29 3
+torneo30 3
+torneo31 3
+torneo32 3
+torneo33 3
+torneo34 3
+torneo35 3
+torneo36 3
+torneo37 3
+torneo38 4
+torneo39 4
+torneo40 4
+torneo41 4
+torneo42 4
+torneo43 4
+torneo44 4
+torneo45 4
+torneo46 4
+torneo47 4
+torneo48 4
+torneo49 4
+torneo50 4
+#listar_jugadores
+50
+player1 Rk:1 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player2 Rk:2 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player3 Rk:3 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player4 Rk:4 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player5 Rk:5 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player6 Rk:6 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player7 Rk:7 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player8 Rk:8 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player9 Rk:9 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player10 Rk:10 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player11 Rk:11 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player12 Rk:12 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player13 Rk:13 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player14 Rk:14 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player15 Rk:15 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player16 Rk:16 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player17 Rk:17 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player18 Rk:18 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player19 Rk:19 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player20 Rk:20 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player21 Rk:21 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player22 Rk:22 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player23 Rk:23 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player24 Rk:24 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player25 Rk:25 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player26 Rk:26 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player27 Rk:27 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player28 Rk:28 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player29 Rk:29 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player30 Rk:30 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player31 Rk:31 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player32 Rk:32 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player33 Rk:33 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player34 Rk:34 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player35 Rk:35 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player36 Rk:36 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player37 Rk:37 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player38 Rk:38 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player39 Rk:39 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player40 Rk:40 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player41 Rk:41 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player42 Rk:42 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player43 Rk:43 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player44 Rk:44 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player45 Rk:45 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player46 Rk:46 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player47 Rk:47 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player48 Rk:48 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player49 Rk:49 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+player50 Rk:50 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+#listar_ranking
+1 player1 0
+2 player2 0
+3 player3 0
+4 player4 0
+5 player5 0
+6 player6 0
+7 player7 0
+8 player8 0
+9 player9 0
+10 player10 0
+11 player11 0
+12 player12 0
+13 player13 0
+14 player14 0
+15 player15 0
+16 player16 0
+17 player17 0
+18 player18 0
+19 player19 0
+20 player20 0
+21 player21 0
+22 player22 0
+23 player23 0
+24 player24 0
+25 player25 0
+26 player26 0 
+27 player27 0
+28 player28 0
+29 player29 0 
+30 player30 0
+31 player31 0
+32 player32 0
+33 player33 0
+34 player34 0
+35 player35 0
+36 player36 0
+37 player37 0
+38 player38 0
+39 player39 0
+40 player40 0
+41 player41 0
+42 player42 0
+43 player43 0
+44 player44 0
+45 player45 0
+46 player46 0
+47 player47 0
+48 player48 0
+49 player49 0
+50 player50 0
+

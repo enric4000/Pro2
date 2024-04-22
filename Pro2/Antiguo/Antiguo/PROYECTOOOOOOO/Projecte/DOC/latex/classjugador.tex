@@ -1,0 +1,95 @@
+\hypertarget{classjugador}{}\doxysection{Referència de la Classe jugador}
+\label{classjugador}\index{jugador@{jugador}}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjugador_adb67bd8d7d8e75edc506e1eac6fdc8ca}{jugador}} (int nombre)
+\begin{DoxyCompactList}\small\item\em creadora con nombre \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classjugador_aaf84889f507bed648fbca51b28472f48}{sumatorneo}} (string t, int p)
+\begin{DoxyCompactList}\small\item\em consulta el torneo en la lista del jugador y si no esta, añade un pair a la lista con el nombre y puntos y suma los puntos al total de p \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classjugador_ae15b52b6591817e2e4524db100b4cd7d}{restatorneo}} (const string t)
+\begin{DoxyCompactList}\small\item\em encuentra t en la lista de j, borra los puntos del torneo a p y borra el torneo de su lista \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classjugador_a5122351fe6556a4201d2bc09144a7c34}{consulta}} ()
+\begin{DoxyCompactList}\small\item\em consulta el juegador \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+
+
+Definició a la línia 15 del fitxer jugador.\+hh.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{classjugador_adb67bd8d7d8e75edc506e1eac6fdc8ca}\label{classjugador_adb67bd8d7d8e75edc506e1eac6fdc8ca}} 
+\index{jugador@{jugador}!jugador@{jugador}}
+\index{jugador@{jugador}!jugador@{jugador}}
+\doxysubsubsection{\texorpdfstring{jugador()}{jugador()}}
+{\footnotesize\ttfamily jugador\+::jugador (\begin{DoxyParamCaption}\item[{int}]{nombre }\end{DoxyParamCaption})}
+
+
+
+creadora con nombre 
+
+Se ejecuta automáticamente al declarar un jugador \begin{DoxyPrecond}{Precondició}
+{\itshape un nombre} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultado es un jugador con nombre y puntos 0 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{classjugador_aaf84889f507bed648fbca51b28472f48}\label{classjugador_aaf84889f507bed648fbca51b28472f48}} 
+\index{jugador@{jugador}!sumatorneo@{sumatorneo}}
+\index{sumatorneo@{sumatorneo}!jugador@{jugador}}
+\doxysubsubsection{\texorpdfstring{sumatorneo()}{sumatorneo()}}
+{\footnotesize\ttfamily void jugador\+::sumatorneo (\begin{DoxyParamCaption}\item[{string}]{t,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+
+
+consulta el torneo en la lista del jugador y si no esta, añade un pair a la lista con el nombre y puntos y suma los puntos al total de p 
+
+\begin{DoxyPrecond}{Precondició}
+el nombre del torneo del jugador y los puntos del torneo 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el jugador con los puntos actualizados 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classjugador_ae15b52b6591817e2e4524db100b4cd7d}\label{classjugador_ae15b52b6591817e2e4524db100b4cd7d}} 
+\index{jugador@{jugador}!restatorneo@{restatorneo}}
+\index{restatorneo@{restatorneo}!jugador@{jugador}}
+\doxysubsubsection{\texorpdfstring{restatorneo()}{restatorneo()}}
+{\footnotesize\ttfamily void jugador\+::restatorneo (\begin{DoxyParamCaption}\item[{const string}]{t }\end{DoxyParamCaption})}
+
+
+
+encuentra t en la lista de j, borra los puntos del torneo a p y borra el torneo de su lista 
+
+\begin{DoxyPrecond}{Precondició}
+nombre del torneo t 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el jugador con los puntos actualizados 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classjugador_a5122351fe6556a4201d2bc09144a7c34}\label{classjugador_a5122351fe6556a4201d2bc09144a7c34}} 
+\index{jugador@{jugador}!consulta@{consulta}}
+\index{consulta@{consulta}!jugador@{jugador}}
+\doxysubsubsection{\texorpdfstring{consulta()}{consulta()}}
+{\footnotesize\ttfamily void jugador\+::consulta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+consulta el juegador 
+
+\begin{DoxyPrecond}{Precondició}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+treu el nom y punts per la terminal 
+\end{DoxyPostcond}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{jugador_8hh}{jugador.\+hh}}\end{DoxyCompactItemize}

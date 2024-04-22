@@ -1,0 +1,20 @@
+iniciar_torneo Barcelona
+14
+ 4 5 6 13 15 17 20 24 25 26 27 31 33 37 
+
+#iniciar_torneo Barcelona
+(((1.Tsitsipas (8.Cilic 9.Monfils)) ((4.Schwartzman 13.Dimitrov) (5.Bautista 12.Ramos))) ((2.Nadal (7.Alcaraz 10.Khachanov)) ((3.Berrettini 14.Delbonis) (6.Carreno 11.Garin))))
+
+(primero,ultimo) [mitad + (poten-x)/2, mitad+(poten-x)/2 + 1] [mitad*2 + (poten-x)/2, mitad + mitad*2 + (poten-x)][[mitad*2 + (poten-x),mitad + mitad*2 + (poten-x)/2 ]
+
+(1,0,)(8,9,)(4,13,)(5,12,)(2,0,)(7,10,)(3,14,)(6,11)
+
+1,16 8,9 4,13 5,12, 2,15, 7,10, 3,14, 6,11,
+ 
+it Cincinnati
+32
+ 1 2 3 7 8 9 10 11 12 14 16 18 19 21 22 23
+ 28 29 30 32 34 35 36 38 40 42 44 45 46 47 48 49
+
+#it Cincinnati
+(((((1.Djokovic 32.Paire) (16.Isner 17.Evans)) ((8.Hurkacz 25.Korda) (9.Norrie 24.Fognini))) (((4.Rublev 29.Lajovic) (13.Basilashvili 20.De-Minaur)) ((5.Ruud 28.Ivashka) (12.Opelka 21.Tiafoe)))) ((((2.Medvedev 31.Goffin) (15.Karatsev 18.Federer)) ((7.Sinner 26.Nishikori) (10.Shapovalov 23.Fucsovics))) (((3.Zverev 30.Brooksby) (14.Sonego 19.Bublik)) ((6.Auger-Aliassime 27.Krajinovic) (11.Fritz 22.Harris)))))

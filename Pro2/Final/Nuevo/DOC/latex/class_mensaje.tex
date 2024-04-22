@@ -1,0 +1,373 @@
+\hypertarget{class_mensaje}{}\doxysection{Referencia de la Clase Mensaje}
+\label{class_mensaje}\index{Mensaje@{Mensaje}}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mensaje_a55acc51ccd949870b4e69c924ee6b093}{Mensaje}} (string \mbox{\hyperlink{class_mensaje_a48e0fe3ebc3c180467fcacd9f56fed86}{ida}})
+\begin{DoxyCompactList}\small\item\em Constructora de un mensaje con ida. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mensaje_a7b8b4ca08f400fef32eaffeec00f65b3}{Mensaje}} ()
+\begin{DoxyCompactList}\small\item\em Constructora de un mensaje sin parámetros. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_mensaje_a5eec354a141ce11c7c77f0f96186cc46}{sice}} ()
+\begin{DoxyCompactList}\small\item\em Accede al string m del mensaje y devuelve su size(). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mensaje_a92f491285ea87b271e7897b9e5043e8c}{escribir\+\_\+mensaje}} ()
+\begin{DoxyCompactList}\small\item\em Escribe el mensaje por la terminal. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_mensaje_a7df85395e3c5b5b6cfa174ca7cc3c399}{devuelve\+\_\+ida}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el ida del mensaje. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_mensaje_a9c21ac5b7ba4ffe28f0b99bbc3e24d1e}{devolver\+\_\+char}} (int pos) const
+\begin{DoxyCompactList}\small\item\em Accede al string m de mensaje y devuelve su char de posición pos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mensaje_af626b8498acc92498dda2d00422e0702}{codificar\+\_\+permutacion}} (int b) const
+\begin{DoxyCompactList}\small\item\em Crea el árbol de la string m con b y lo imprime. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+Bin\+Tree$<$ char $>$ \mbox{\hyperlink{class_mensaje_ac758ff57b108a7fd840ebb38eb6ffe02}{crea\+\_\+arbol}} (int valor, int posinicio, int posfinal) const
+\begin{DoxyCompactList}\small\item\em Crea un arbol ya con los nodos ya invertidos en posición. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mensaje_a35a7abdedaf6d3a10689eecdcbea46b3}{imprime\+\_\+arbol}} (const Bin\+Tree$<$ char $>$ \&arbol) const
+\begin{DoxyCompactList}\small\item\em Imprime el arbol creado anteriormente en inorden. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}}
+\item 
+string \mbox{\hyperlink{class_mensaje_a48e0fe3ebc3c180467fcacd9f56fed86}{ida}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+
+
+Definición en la línea 13 del archivo Mensaje.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_mensaje_a55acc51ccd949870b4e69c924ee6b093}\label{class_mensaje_a55acc51ccd949870b4e69c924ee6b093}} 
+\index{Mensaje@{Mensaje}!Mensaje@{Mensaje}}
+\index{Mensaje@{Mensaje}!Mensaje@{Mensaje}}
+\doxysubsubsection{\texorpdfstring{Mensaje()}{Mensaje()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Mensaje\+::\+Mensaje (\begin{DoxyParamCaption}\item[{string}]{ida }\end{DoxyParamCaption})}
+
+
+
+Constructora de un mensaje con ida. 
+
+Se ejecuta automáticamente al declarar un mensaje con una string por parámetro. \begin{DoxyPrecond}{Precondición}
+{\itshape  Un string ida no vacío. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un mensaje de string m leído de la terminal y this-\/$>$ida = ida. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 43 del archivo Mensaje.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                            \{}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     this-\/>\mbox{\hyperlink{class_mensaje_a48e0fe3ebc3c180467fcacd9f56fed86}{ida}} = \mbox{\hyperlink{class_mensaje_a48e0fe3ebc3c180467fcacd9f56fed86}{ida}};}
+\DoxyCodeLine{46     cin.ignore();}
+\DoxyCodeLine{47     getline(cin, this-\/>\mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}});}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mensaje_a7b8b4ca08f400fef32eaffeec00f65b3}\label{class_mensaje_a7b8b4ca08f400fef32eaffeec00f65b3}} 
+\index{Mensaje@{Mensaje}!Mensaje@{Mensaje}}
+\index{Mensaje@{Mensaje}!Mensaje@{Mensaje}}
+\doxysubsubsection{\texorpdfstring{Mensaje()}{Mensaje()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Mensaje\+::\+Mensaje (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora de un mensaje sin parámetros. 
+
+Se ejecuta automáticamente al declarar un mensaje sin parámetros. \begin{DoxyPrecond}{Precondición}
+{\itshape  Cierto } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un mensaje con la string m leído de la terminal y ida =\char`\"{}\char`\"{}. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 51 del archivo Mensaje.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                  \{}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     cin.ignore();}
+\DoxyCodeLine{54     getline(cin, this-\/>\mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}});}
+\DoxyCodeLine{55     \mbox{\hyperlink{class_mensaje_a48e0fe3ebc3c180467fcacd9f56fed86}{ida}} = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_mensaje_ac758ff57b108a7fd840ebb38eb6ffe02}\label{class_mensaje_ac758ff57b108a7fd840ebb38eb6ffe02}} 
+\index{Mensaje@{Mensaje}!crea\_arbol@{crea\_arbol}}
+\index{crea\_arbol@{crea\_arbol}!Mensaje@{Mensaje}}
+\doxysubsubsection{\texorpdfstring{crea\_arbol()}{crea\_arbol()}}
+{\footnotesize\ttfamily Bin\+Tree$<$ char $>$ Mensaje\+::crea\+\_\+arbol (\begin{DoxyParamCaption}\item[{int}]{valor,  }\item[{int}]{posinicio,  }\item[{int}]{posfinal }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Crea un arbol ya con los nodos ya invertidos en posición. 
+
+\begin{DoxyVerb}\pre <em> El mensaje no esta vacío. </em>
+\post Devuelve el arbol creado, ya sea el completo, una hoja o una rama dependiendo del caso.
+\end{DoxyVerb}
+ 
+
+Definición en la línea 8 del archivo Mensaje.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                                                                              \{}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10     \textcolor{keywordtype}{int} posmitad = (posfinal + posinicio)/2;}
+\DoxyCodeLine{11     \textcolor{keywordtype}{int} intervalo = posfinal -\/ posinicio;}
+\DoxyCodeLine{12     \textcolor{keywordtype}{int} posdere, posizq;}
+\DoxyCodeLine{13     posdere = (posmitad+1+posfinal)/2;}
+\DoxyCodeLine{14     posizq = (posmitad-\/1+posinicio)/2;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \textcolor{keywordflow}{if} (intervalo > 1) \{}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18         BinTree<char> left = \mbox{\hyperlink{class_mensaje_ac758ff57b108a7fd840ebb38eb6ffe02}{crea\_arbol}}(posdere, posinicio, posmitad-\/1);}
+\DoxyCodeLine{19         BinTree<char> right = \mbox{\hyperlink{class_mensaje_ac758ff57b108a7fd840ebb38eb6ffe02}{crea\_arbol}}(posizq, posmitad+1, posfinal);}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21         \textcolor{keywordflow}{return} BinTree<char>(\mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}}[valor], left, right);}
+\DoxyCodeLine{22     \}}
+\DoxyCodeLine{23     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (intervalo == 1) \{}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25         \textcolor{keywordflow}{return} BinTree<char>(\mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}}[valor], BinTree<char>(), BinTree<char>(\mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}}[posfinal]));}
+\DoxyCodeLine{26     \}}
+\DoxyCodeLine{27     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29         \textcolor{keywordflow}{return} BinTree<char>(\mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}}[valor]);}
+\DoxyCodeLine{30     \}}
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mensaje_a35a7abdedaf6d3a10689eecdcbea46b3}\label{class_mensaje_a35a7abdedaf6d3a10689eecdcbea46b3}} 
+\index{Mensaje@{Mensaje}!imprime\_arbol@{imprime\_arbol}}
+\index{imprime\_arbol@{imprime\_arbol}!Mensaje@{Mensaje}}
+\doxysubsubsection{\texorpdfstring{imprime\_arbol()}{imprime\_arbol()}}
+{\footnotesize\ttfamily void Mensaje\+::imprime\+\_\+arbol (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ char $>$ \&}]{arbol }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Imprime el arbol creado anteriormente en inorden. 
+
+\begin{DoxyVerb}\pre <em> El arbol tiene que existir. </em>
+\post El arbol se ha imprimido en inorden por la terminal.
+\end{DoxyVerb}
+ 
+
+Definición en la línea 33 del archivo Mensaje.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33                                                            \{}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keywordflow}{if} (not arbol.empty()) \{}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37         \mbox{\hyperlink{class_mensaje_a35a7abdedaf6d3a10689eecdcbea46b3}{imprime\_arbol}}(arbol.left());}
+\DoxyCodeLine{38         cout << arbol.value();}
+\DoxyCodeLine{39         \mbox{\hyperlink{class_mensaje_a35a7abdedaf6d3a10689eecdcbea46b3}{imprime\_arbol}}(arbol.right());}
+\DoxyCodeLine{40     \}}
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mensaje_a5eec354a141ce11c7c77f0f96186cc46}\label{class_mensaje_a5eec354a141ce11c7c77f0f96186cc46}} 
+\index{Mensaje@{Mensaje}!sice@{sice}}
+\index{sice@{sice}!Mensaje@{Mensaje}}
+\doxysubsubsection{\texorpdfstring{sice()}{sice()}}
+{\footnotesize\ttfamily int Mensaje\+::sice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Accede al string m del mensaje y devuelve su size(). 
+
+\begin{DoxyVerb}\pre <em> Cierto </em>
+\post Devuelve el size de m.
+\end{DoxyVerb}
+ 
+
+Definición en la línea 59 del archivo Mensaje.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59                   \{}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}}.size();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mensaje_a92f491285ea87b271e7897b9e5043e8c}\label{class_mensaje_a92f491285ea87b271e7897b9e5043e8c}} 
+\index{Mensaje@{Mensaje}!escribir\_mensaje@{escribir\_mensaje}}
+\index{escribir\_mensaje@{escribir\_mensaje}!Mensaje@{Mensaje}}
+\doxysubsubsection{\texorpdfstring{escribir\_mensaje()}{escribir\_mensaje()}}
+{\footnotesize\ttfamily void Mensaje\+::escribir\+\_\+mensaje (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Escribe el mensaje por la terminal. 
+
+\begin{DoxyVerb}\pre <em> Las strings m y ida no son vacías. </em>
+\post Saca por la terminal las strings ida y m.
+\end{DoxyVerb}
+ 
+
+Definición en la línea 65 del archivo Mensaje.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                                \{}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67     cout << \mbox{\hyperlink{class_mensaje_a48e0fe3ebc3c180467fcacd9f56fed86}{ida}} << endl << \textcolor{charliteral}{'"'} << \mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}} << \textcolor{charliteral}{'"'} << endl;}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mensaje_a7df85395e3c5b5b6cfa174ca7cc3c399}\label{class_mensaje_a7df85395e3c5b5b6cfa174ca7cc3c399}} 
+\index{Mensaje@{Mensaje}!devuelve\_ida@{devuelve\_ida}}
+\index{devuelve\_ida@{devuelve\_ida}!Mensaje@{Mensaje}}
+\doxysubsubsection{\texorpdfstring{devuelve\_ida()}{devuelve\_ida()}}
+{\footnotesize\ttfamily string Mensaje\+::devuelve\+\_\+ida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el ida del mensaje. 
+
+\begin{DoxyVerb}\pre <em> La string ida del mensaje no está vacía. </em>
+\post Retorna la string ida del mensaje.
+\end{DoxyVerb}
+ 
+
+Definición en la línea 71 del archivo Mensaje.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71                              \{}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_mensaje_a48e0fe3ebc3c180467fcacd9f56fed86}{ida}};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mensaje_a9c21ac5b7ba4ffe28f0b99bbc3e24d1e}\label{class_mensaje_a9c21ac5b7ba4ffe28f0b99bbc3e24d1e}} 
+\index{Mensaje@{Mensaje}!devolver\_char@{devolver\_char}}
+\index{devolver\_char@{devolver\_char}!Mensaje@{Mensaje}}
+\doxysubsubsection{\texorpdfstring{devolver\_char()}{devolver\_char()}}
+{\footnotesize\ttfamily char Mensaje\+::devolver\+\_\+char (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const}
+
+
+
+Accede al string m de mensaje y devuelve su char de posición pos. 
+
+\begin{DoxyVerb}\pre <em>La string m de mensaje no está vacía y el entero pos >= 0. </em>
+\post Retorna el char de m de posición pos del mensaje.
+\end{DoxyVerb}
+ 
+
+Definición en la línea 77 del archivo Mensaje.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77                                         \{}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     \textcolor{keywordflow}{if} (pos < \mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}}.size()) \textcolor{keywordflow}{return} \mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}}[pos];}
+\DoxyCodeLine{80     \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_mensaje_af626b8498acc92498dda2d00422e0702}\label{class_mensaje_af626b8498acc92498dda2d00422e0702}} 
+\index{Mensaje@{Mensaje}!codificar\_permutacion@{codificar\_permutacion}}
+\index{codificar\_permutacion@{codificar\_permutacion}!Mensaje@{Mensaje}}
+\doxysubsubsection{\texorpdfstring{codificar\_permutacion()}{codificar\_permutacion()}}
+{\footnotesize\ttfamily void Mensaje\+::codificar\+\_\+permutacion (\begin{DoxyParamCaption}\item[{int}]{b }\end{DoxyParamCaption}) const}
+
+
+
+Crea el árbol de la string m con b y lo imprime. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  La string m del mensaje no está vacía y el entero b $>$= 0 . } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Imprime por la terminal el mensaje codificado o decodificado con comillas. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 84 del archivo Mensaje.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{84                                               \{}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86     BinTree<char> arboliko;}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88     \textcolor{keywordflow}{if} (b >= \mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}}.size()) \{}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90         cout << \textcolor{stringliteral}{"\(\backslash\)""};}
+\DoxyCodeLine{91         arboliko = \mbox{\hyperlink{class_mensaje_ac758ff57b108a7fd840ebb38eb6ffe02}{crea\_arbol}}((\mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}}.size()-\/1)/2, 0, \mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}}.size()-\/1);}
+\DoxyCodeLine{92         \mbox{\hyperlink{class_mensaje_a35a7abdedaf6d3a10689eecdcbea46b3}{imprime\_arbol}}(arboliko);}
+\DoxyCodeLine{93         cout << \textcolor{stringliteral}{"\(\backslash\)""} << endl;}
+\DoxyCodeLine{94     \}}
+\DoxyCodeLine{95     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97         cout << \textcolor{stringliteral}{"\(\backslash\)""};}
+\DoxyCodeLine{98         \textcolor{keywordtype}{int} j = 0;}
+\DoxyCodeLine{99         \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{100         \textcolor{keywordflow}{for} (i = 0; j < \mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}}.size()/b; i += b) \{}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102             arboliko = \mbox{\hyperlink{class_mensaje_ac758ff57b108a7fd840ebb38eb6ffe02}{crea\_arbol}}((i*2+b-\/1)/2, i, i+b -\/ 1);}
+\DoxyCodeLine{103             \mbox{\hyperlink{class_mensaje_a35a7abdedaf6d3a10689eecdcbea46b3}{imprime\_arbol}}(arboliko);}
+\DoxyCodeLine{104             ++j;}
+\DoxyCodeLine{105         \}}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107         \textcolor{keywordflow}{if} (b != 1) \{}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109             arboliko = \mbox{\hyperlink{class_mensaje_ac758ff57b108a7fd840ebb38eb6ffe02}{crea\_arbol}}((\mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}}.size() + i -\/ 1)/2, i, \mbox{\hyperlink{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}{m}}.size()-\/1);  }
+\DoxyCodeLine{110             \mbox{\hyperlink{class_mensaje_a35a7abdedaf6d3a10689eecdcbea46b3}{imprime\_arbol}}(arboliko);}
+\DoxyCodeLine{111         \}}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113         cout << \textcolor{stringliteral}{"\(\backslash\)""} << endl;}
+\DoxyCodeLine{114     \}}
+\DoxyCodeLine{115 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}\label{class_mensaje_abd9db97a3fd46643d5db03c287f95ae7}} 
+\index{Mensaje@{Mensaje}!m@{m}}
+\index{m@{m}!Mensaje@{Mensaje}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily string Mensaje\+::m\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 17 del archivo Mensaje.\+hh.
+
+\mbox{\Hypertarget{class_mensaje_a48e0fe3ebc3c180467fcacd9f56fed86}\label{class_mensaje_a48e0fe3ebc3c180467fcacd9f56fed86}} 
+\index{Mensaje@{Mensaje}!ida@{ida}}
+\index{ida@{ida}!Mensaje@{Mensaje}}
+\doxysubsubsection{\texorpdfstring{ida}{ida}}
+{\footnotesize\ttfamily string Mensaje\+::ida\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 17 del archivo Mensaje.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_mensaje_8hh}{Mensaje.\+hh}}\item 
+\mbox{\hyperlink{_mensaje_8cc}{Mensaje.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,173 @@
+\hypertarget{program_8cc}{}\doxysection{Referencia del Archivo program.\+cc}
+\label{program_8cc}\index{program.cc@{program.cc}}
+
+
+programa main.  
+
+
+Dependencia gráfica adjunta para program.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{program_8cc__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{program_8cc_a9844077078126ddbd0e0cb20f33cec67}{\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+C\+C\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+programa main. 
+
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{program_8cc_a9844077078126ddbd0e0cb20f33cec67}\label{program_8cc_a9844077078126ddbd0e0cb20f33cec67}} 
+\index{program.cc@{program.cc}!\_PROGRAM\_CC\_@{\_PROGRAM\_CC\_}}
+\index{\_PROGRAM\_CC\_@{\_PROGRAM\_CC\_}!program.cc@{program.cc}}
+\doxysubsubsection{\texorpdfstring{\_PROGRAM\_CC\_}{\_PROGRAM\_CC\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+C\+C\+\_\+}
+
+
+
+Definición en la línea 7 del archivo program.\+cc.
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{program.cc@{program.cc}!main@{main}}
+\index{main@{main}!program.cc@{program.cc}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 17 del archivo program.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17           \{}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19   \textcolor{keywordtype}{int} M = 0;}
+\DoxyCodeLine{20   \textcolor{keywordtype}{int} A = 0;}
+\DoxyCodeLine{21   \textcolor{keywordtype}{int} b = 0;}
+\DoxyCodeLine{22   \textcolor{keywordtype}{string} commando =\textcolor{stringliteral}{""};}
+\DoxyCodeLine{23   \textcolor{keywordtype}{string} clave = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{24   \textcolor{keywordtype}{string} ida = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{25   \textcolor{keywordtype}{string} idm = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{26   \textcolor{keywordtype}{string} m =\textcolor{stringliteral}{""};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     cin >> A;}
+\DoxyCodeLine{29   \mbox{\hyperlink{class_c_alfabetos}{CAlfabetos}} alfas(A);}
+\DoxyCodeLine{30   cin >> M;}
+\DoxyCodeLine{31   \mbox{\hyperlink{class_c_mensajes}{CMensajes}} mensas(M, alfas);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33   cin >> commando;}
+\DoxyCodeLine{34   \textcolor{keywordflow}{while}(commando != \textcolor{stringliteral}{"fin"})\{}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keywordflow}{if}(commando == \textcolor{stringliteral}{"nuevo\_mensaje"} or commando== \textcolor{stringliteral}{"nm"})\{}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38       cin >> idm >> ida;}
+\DoxyCodeLine{39       cout << \textcolor{charliteral}{'\#'} << commando << \textcolor{charliteral}{' '} << idm << \textcolor{charliteral}{' '} << ida << endl;}
+\DoxyCodeLine{40       mensas.nuevo\_mensaje(alfas, idm, ida);  }
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(commando == \textcolor{stringliteral}{"nuevo\_alfabeto"} or commando == \textcolor{stringliteral}{"na"}) \{}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46       cin >> ida;}
+\DoxyCodeLine{47       cout << \textcolor{charliteral}{'\#'} << commando << \textcolor{charliteral}{' '} << ida << endl;}
+\DoxyCodeLine{48             alfas.nuevo\_alfabeto(ida);}
+\DoxyCodeLine{49     \}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(commando == \textcolor{stringliteral}{"borra\_mensaje"} or commando == \textcolor{stringliteral}{"bm"}) \{}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53       cin >> idm;}
+\DoxyCodeLine{54       cout << \textcolor{charliteral}{'\#'} << commando << \textcolor{charliteral}{' '} << idm << endl;;}
+\DoxyCodeLine{55             mensas.borrar\_mensaje(idm, alfas);}
+\DoxyCodeLine{56     \}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(commando == \textcolor{stringliteral}{"borra\_alfabeto"} or commando == \textcolor{stringliteral}{"ba"}) \{}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60         cin >> ida;}
+\DoxyCodeLine{61       cout << \textcolor{charliteral}{'\#'} << commando << \textcolor{charliteral}{' '} << ida << endl;}
+\DoxyCodeLine{62             alfas.borrar\_alfabeto(ida);}
+\DoxyCodeLine{63     \}}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(commando == \textcolor{stringliteral}{"listar\_mensajes"} or commando == \textcolor{stringliteral}{"lm"}) \{}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67       cout << \textcolor{charliteral}{'\#'} << commando << endl;}
+\DoxyCodeLine{68       mensas.listar\_mensajes();}
+\DoxyCodeLine{69     \}}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(commando == \textcolor{stringliteral}{"listar\_alfabetos"} or commando == \textcolor{stringliteral}{"la"}) \{}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73       cout << \textcolor{charliteral}{'\#'} << commando << endl;}
+\DoxyCodeLine{74       alfas.listar\_alfabetos();}
+\DoxyCodeLine{75     \}}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(commando == \textcolor{stringliteral}{"codificar\_sustitucion\_guardado"} or commando == \textcolor{stringliteral}{"csg"}) \{}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79       cin >> idm; }
+\DoxyCodeLine{80       cin.ignore();}
+\DoxyCodeLine{81       getline(cin, clave);}
+\DoxyCodeLine{82       cout << \textcolor{charliteral}{'\#'} << commando << \textcolor{charliteral}{' '} << idm << \textcolor{stringliteral}{" \(\backslash\)""} << clave << \textcolor{stringliteral}{"\(\backslash\)""} << endl; }
+\DoxyCodeLine{83       mensas.codificar\_sustitucion\_guardado(alfas, idm, clave);}
+\DoxyCodeLine{84     \}}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(commando == \textcolor{stringliteral}{"codificar\_sustitucion"} or commando == \textcolor{stringliteral}{"cs"}) \{}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88       cin >> ida;}
+\DoxyCodeLine{89       cin.ignore();}
+\DoxyCodeLine{90       getline(cin, clave);}
+\DoxyCodeLine{91       getline(cin, m);}
+\DoxyCodeLine{92       cout << \textcolor{charliteral}{'\#'} << commando << \textcolor{charliteral}{' '} << ida << \textcolor{stringliteral}{" \(\backslash\)""} << clave << \textcolor{charliteral}{'"'} << endl; }
+\DoxyCodeLine{93       mensas.codificar\_sustitucion(alfas, ida, clave, m);}
+\DoxyCodeLine{94     \}}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(commando == \textcolor{stringliteral}{"decodificar\_sustitucion"} or commando == \textcolor{stringliteral}{"ds"}) \{}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98       cin >> ida;}
+\DoxyCodeLine{99       cin.ignore();}
+\DoxyCodeLine{100       getline(cin, clave);}
+\DoxyCodeLine{101       getline(cin, m);}
+\DoxyCodeLine{102       cout << \textcolor{charliteral}{'\#'} << commando << \textcolor{charliteral}{' '} << ida << \textcolor{stringliteral}{" \(\backslash\)""} << clave << \textcolor{charliteral}{'"'} << endl; }
+\DoxyCodeLine{103             alfas.decodificar\_sustitucion(ida, clave, m);}
+\DoxyCodeLine{104     \}}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(commando == \textcolor{stringliteral}{"codificar\_permutacion\_guardado"} or commando == \textcolor{stringliteral}{"cpg"}) \{}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108       cin >> idm;}
+\DoxyCodeLine{109       cin >> b;}
+\DoxyCodeLine{110       cout << \textcolor{charliteral}{'\#'} << commando << \textcolor{charliteral}{' '} << idm << \textcolor{charliteral}{' '} << b << endl; }
+\DoxyCodeLine{111             mensas.codificar\_permutacion\_guardado(idm, b);}
+\DoxyCodeLine{112     \}}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(commando == \textcolor{stringliteral}{"codificar\_permutacion"} or commando == \textcolor{stringliteral}{"cp"}) \{}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116       cin >> b;}
+\DoxyCodeLine{117       cout << \textcolor{charliteral}{'\#'} << commando << \textcolor{charliteral}{' '} << b << endl; }
+\DoxyCodeLine{118             mensas.codificar\_permutacion(b);}
+\DoxyCodeLine{119     \}}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(commando == \textcolor{stringliteral}{"decodificar\_permutacion"} or commando == \textcolor{stringliteral}{"dp"}) \{}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123       cin >> b;}
+\DoxyCodeLine{124       cout << \textcolor{charliteral}{'\#'} << commando << \textcolor{charliteral}{' '} << b << endl; }
+\DoxyCodeLine{125       mensas.decodificar\_permutacion(b);}
+\DoxyCodeLine{126     \}}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128     cin >> commando;}
+\DoxyCodeLine{129   \}}
+\DoxyCodeLine{130 \}}
+
+\end{DoxyCode}

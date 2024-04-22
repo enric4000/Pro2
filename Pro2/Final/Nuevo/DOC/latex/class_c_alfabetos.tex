@@ -1,0 +1,544 @@
+\hypertarget{class_c_alfabetos}{}\doxysection{Referencia de la Clase C\+Alfabetos}
+\label{class_c_alfabetos}\index{CAlfabetos@{CAlfabetos}}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_alfabetos_a4dd827c61d8fb86b04056dff67a2a25f}{C\+Alfabetos}} ()
+\begin{DoxyCompactList}\small\item\em Constructora de \mbox{\hyperlink{class_c_alfabetos}{C\+Alfabetos}} sin parámetros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_alfabetos_a413c0496d6e9498b7e90f5c0b4089e27}{C\+Alfabetos}} (const int \&\mbox{\hyperlink{class_c_alfabetos_abe52e138c234e1a7495fc94e1dbd4b26}{A}})
+\begin{DoxyCompactList}\small\item\em Constructora de \mbox{\hyperlink{class_c_alfabetos}{C\+Alfabetos}} con número de alfabetos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_alfabetos_a0197d6f46a72d59c1ebc938232d21476}{nuevo\+\_\+alfabeto}} (const string ida)
+\begin{DoxyCompactList}\small\item\em Lee y añade un alfabeto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_alfabetos_ad834e95753ee035c7ad5a8c30404c17b}{borrar\+\_\+alfabeto}} (const string ida)
+\begin{DoxyCompactList}\small\item\em Borra el alfabeto de identificador ida del map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_alfabetos_aecfc623493e8eecc58fe0b8bc516f96b}{incrementa}} (const string ida)
+\begin{DoxyCompactList}\small\item\em Busca el alfabeto de identificador ida y entra en él para incrementarlo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_alfabetos_ad71225b377c5cb21be6fed4ee862939e}{decrementa}} (const string ida)
+\begin{DoxyCompactList}\small\item\em Busca el alfabeto de identificador ida y decrementa en uno su número de mensajes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_alfabetos_a5df5be207aa1b6841c0ba860f076bd83}{listar\+\_\+alfabetos}} ()
+\begin{DoxyCompactList}\small\item\em Lista todos los alfabetos. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_alfabetos_ac6532ce74b7bcc64438dd5de14edafdd}{existe}} (string ida)
+\begin{DoxyCompactList}\small\item\em Devuelve si existe o no el alfabeto. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_alfabetos_a44db666c1ff901a93efd044ad66a422e}{compruebaespe}} (string ida)
+\begin{DoxyCompactList}\small\item\em Devuelve si el alfabeto de identificador ida es especial. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_alfabetos_aa70b0535254cb7134813e70c1ae3ecec}{buscaida}} (string ida)
+\begin{DoxyCompactList}\small\item\em Busca el alfabeto de identificador ida. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_c_alfabetos_a5cc9dc7821edf505a9d9db0554e1c321}{codificar\+\_\+sustitucion}} (char m, char c) const
+\begin{DoxyCompactList}\small\item\em Codifica el char m con el char c y el alfabeto normal apuntado por el iterador it. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_c_alfabetos_a198beb46b296ad4d2f5b9341061c1ed9}{codificar\+\_\+sustitucion\+\_\+especial}} (char m, char c) const
+\begin{DoxyCompactList}\small\item\em Codifica el char m con el char c y el alfabeto especial apuntado por el iterador it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_alfabetos_a60ded2168d57db8f4759e708099df7cf}{decodificar\+\_\+sustitucion}} (string ida, string \&clave, string \&m)
+\begin{DoxyCompactList}\small\item\em Decodifica la string m con la clave si existe el alfabeto de identificador ida. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_alfabetos_abe52e138c234e1a7495fc94e1dbd4b26}{A}}
+\item 
+map$<$ string, \mbox{\hyperlink{class_alfabeto}{Alfabeto}} $>$ \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}
+\item 
+map$<$ string, \mbox{\hyperlink{class_alfabeto}{Alfabeto}} $>$\+::iterator \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+
+
+Definición en la línea 15 del archivo C\+Alfabetos.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_c_alfabetos_a4dd827c61d8fb86b04056dff67a2a25f}\label{class_c_alfabetos_a4dd827c61d8fb86b04056dff67a2a25f}} 
+\index{CAlfabetos@{CAlfabetos}!CAlfabetos@{CAlfabetos}}
+\index{CAlfabetos@{CAlfabetos}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{CAlfabetos()}{CAlfabetos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C\+Alfabetos\+::\+C\+Alfabetos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora de \mbox{\hyperlink{class_c_alfabetos}{C\+Alfabetos}} sin parámetros. 
+
+Se ejecuta automáticamente al declarar un conjunto de alfabetos. \begin{DoxyPrecond}{Precondición}
+{\itshape  Cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un conjunto de alfabetos vacío. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 8 del archivo C\+Alfabetos.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                        \{}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10     \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.clear();}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_c_alfabetos_abe52e138c234e1a7495fc94e1dbd4b26}{A}} = 0;}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}} = \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.end();}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_alfabetos_a413c0496d6e9498b7e90f5c0b4089e27}\label{class_c_alfabetos_a413c0496d6e9498b7e90f5c0b4089e27}} 
+\index{CAlfabetos@{CAlfabetos}!CAlfabetos@{CAlfabetos}}
+\index{CAlfabetos@{CAlfabetos}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{CAlfabetos()}{CAlfabetos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+Alfabetos\+::\+C\+Alfabetos (\begin{DoxyParamCaption}\item[{const int \&}]{A }\end{DoxyParamCaption})}
+
+
+
+Constructora de \mbox{\hyperlink{class_c_alfabetos}{C\+Alfabetos}} con número de alfabetos. 
+
+Se ejecuta automáticamente al declarar un conjunto de alfabetos con parámetro A. \begin{DoxyPrecond}{Precondición}
+{\itshape  Un numero inicial de alfabetos } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un conjunto de alfabetos con A alfabetos. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 16 del archivo C\+Alfabetos.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16                                    \{}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keywordtype}{string} ida = \textcolor{stringliteral}{""}; }
+\DoxyCodeLine{19     this-\/>\mbox{\hyperlink{class_c_alfabetos_abe52e138c234e1a7495fc94e1dbd4b26}{A}} = \mbox{\hyperlink{class_c_alfabetos_abe52e138c234e1a7495fc94e1dbd4b26}{A}};}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.clear();}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}} = \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.end();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_c_alfabetos_abe52e138c234e1a7495fc94e1dbd4b26}{A}} > 0) \{}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_c_alfabetos_abe52e138c234e1a7495fc94e1dbd4b26}{A}}; ++i) \{}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27             cin >> ida;}
+\DoxyCodeLine{28             cin.ignore();}
+\DoxyCodeLine{29             \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.insert(make\_pair(ida, \mbox{\hyperlink{class_alfabeto}{Alfabeto}}()));}
+\DoxyCodeLine{30         \}}
+\DoxyCodeLine{31     \}}
+\DoxyCodeLine{32 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_c_alfabetos_a0197d6f46a72d59c1ebc938232d21476}\label{class_c_alfabetos_a0197d6f46a72d59c1ebc938232d21476}} 
+\index{CAlfabetos@{CAlfabetos}!nuevo\_alfabeto@{nuevo\_alfabeto}}
+\index{nuevo\_alfabeto@{nuevo\_alfabeto}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{nuevo\_alfabeto()}{nuevo\_alfabeto()}}
+{\footnotesize\ttfamily void C\+Alfabetos\+::nuevo\+\_\+alfabeto (\begin{DoxyParamCaption}\item[{const string}]{ida }\end{DoxyParamCaption})}
+
+
+
+Lee y añade un alfabeto. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Una string ida no vacía. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El map de Calfabetos con el nuevo alfabeto incluido. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 34 del archivo C\+Alfabetos.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34                                                 \{}
+\DoxyCodeLine{35     \textcolor{keywordtype}{string} alfabet;}
+\DoxyCodeLine{36     cin.ignore();}
+\DoxyCodeLine{37     \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}} = \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.find(ida);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}} == \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.end()) \{}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41         \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.insert(make\_pair(ida, \mbox{\hyperlink{class_alfabeto}{Alfabeto}}()));}
+\DoxyCodeLine{42         ++\mbox{\hyperlink{class_c_alfabetos_abe52e138c234e1a7495fc94e1dbd4b26}{A}};}
+\DoxyCodeLine{43         cout << \mbox{\hyperlink{class_c_alfabetos_abe52e138c234e1a7495fc94e1dbd4b26}{A}} << endl;}
+\DoxyCodeLine{44     \}}
+\DoxyCodeLine{45     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47         getline(cin, alfabet);}
+\DoxyCodeLine{48         cout << \textcolor{stringliteral}{"error: el alfabeto ya existe"} << endl;}
+\DoxyCodeLine{49     \}}
+\DoxyCodeLine{50 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_alfabetos_ad834e95753ee035c7ad5a8c30404c17b}\label{class_c_alfabetos_ad834e95753ee035c7ad5a8c30404c17b}} 
+\index{CAlfabetos@{CAlfabetos}!borrar\_alfabeto@{borrar\_alfabeto}}
+\index{borrar\_alfabeto@{borrar\_alfabeto}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{borrar\_alfabeto()}{borrar\_alfabeto()}}
+{\footnotesize\ttfamily void C\+Alfabetos\+::borrar\+\_\+alfabeto (\begin{DoxyParamCaption}\item[{const string}]{ida }\end{DoxyParamCaption})}
+
+
+
+Borra el alfabeto de identificador ida del map. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Una string ida no vacía. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El map de Calfabetos sin el alfabeto de identificador ida, sino existe ese alfabeto imprime un error. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 52 del archivo C\+Alfabetos.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52                                                  \{}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_c_alfabetos_ac6532ce74b7bcc64438dd5de14edafdd}{existe}}(ida)) \{}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56         \textcolor{keywordflow}{if} (not \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}}-\/>second.comprobarmens()) \{}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58             \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.erase(\mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}});}
+\DoxyCodeLine{59             -\/-\/\mbox{\hyperlink{class_c_alfabetos_abe52e138c234e1a7495fc94e1dbd4b26}{A}};}
+\DoxyCodeLine{60             cout << \mbox{\hyperlink{class_c_alfabetos_abe52e138c234e1a7495fc94e1dbd4b26}{A}} << endl;}
+\DoxyCodeLine{61         \}}
+\DoxyCodeLine{62         \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"error: hay mensajes guardados con el alfabeto"} << endl;}
+\DoxyCodeLine{63     \}}
+\DoxyCodeLine{64 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_alfabetos_aecfc623493e8eecc58fe0b8bc516f96b}\label{class_c_alfabetos_aecfc623493e8eecc58fe0b8bc516f96b}} 
+\index{CAlfabetos@{CAlfabetos}!incrementa@{incrementa}}
+\index{incrementa@{incrementa}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{incrementa()}{incrementa()}}
+{\footnotesize\ttfamily void C\+Alfabetos\+::incrementa (\begin{DoxyParamCaption}\item[{const string}]{ida }\end{DoxyParamCaption})}
+
+
+
+Busca el alfabeto de identificador ida y entra en él para incrementarlo. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Una string ida no vacía y que corresponde con un alfabeto existente. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El alfabeto de identificador ida con su Nummensa incrementado en 1. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 66 del archivo C\+Alfabetos.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66                                             \{}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68     \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}} = \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.find(ida);}
+\DoxyCodeLine{69     \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}}-\/>second.incrementa();}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_alfabetos_ad71225b377c5cb21be6fed4ee862939e}\label{class_c_alfabetos_ad71225b377c5cb21be6fed4ee862939e}} 
+\index{CAlfabetos@{CAlfabetos}!decrementa@{decrementa}}
+\index{decrementa@{decrementa}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{decrementa()}{decrementa()}}
+{\footnotesize\ttfamily void C\+Alfabetos\+::decrementa (\begin{DoxyParamCaption}\item[{const string}]{ida }\end{DoxyParamCaption})}
+
+
+
+Busca el alfabeto de identificador ida y decrementa en uno su número de mensajes. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Una string ida no vacía y que corresponde con un alfabeto existente. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El alfabeto de identificador ida con su Nummensa decrementado en 1. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 73 del archivo C\+Alfabetos.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73                                             \{}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}} = \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.find(ida);}
+\DoxyCodeLine{76     \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}}-\/>second.decrementa();}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_alfabetos_a5df5be207aa1b6841c0ba860f076bd83}\label{class_c_alfabetos_a5df5be207aa1b6841c0ba860f076bd83}} 
+\index{CAlfabetos@{CAlfabetos}!listar\_alfabetos@{listar\_alfabetos}}
+\index{listar\_alfabetos@{listar\_alfabetos}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{listar\_alfabetos()}{listar\_alfabetos()}}
+{\footnotesize\ttfamily void C\+Alfabetos\+::listar\+\_\+alfabetos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lista todos los alfabetos. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Saca por la terminal todos los alfabetos. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 80 del archivo C\+Alfabetos.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80                                   \{}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     \textcolor{keywordtype}{int} i = 1;}
+\DoxyCodeLine{83     \textcolor{keywordflow}{for} (\mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}} = \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.begin(); \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}} != \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.end(); ++\mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}}) \{}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85         cout << i << \textcolor{stringliteral}{". "} << \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}}-\/>first << endl;}
+\DoxyCodeLine{86         \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}}-\/>second.escribir\_alfabeto();}
+\DoxyCodeLine{87         ++i;}
+\DoxyCodeLine{88     \}}
+\DoxyCodeLine{89 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_alfabetos_ac6532ce74b7bcc64438dd5de14edafdd}\label{class_c_alfabetos_ac6532ce74b7bcc64438dd5de14edafdd}} 
+\index{CAlfabetos@{CAlfabetos}!existe@{existe}}
+\index{existe@{existe}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{existe()}{existe()}}
+{\footnotesize\ttfamily bool C\+Alfabetos\+::existe (\begin{DoxyParamCaption}\item[{string}]{ida }\end{DoxyParamCaption})}
+
+
+
+Devuelve si existe o no el alfabeto. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  La string ida no está vacía } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna si existe el alfabeto en el mapa, el iterador del \mbox{\hyperlink{class_c_alfabetos}{C\+Alfabetos}} it queda situado encima del alfabeto existente y, sino existe, imprime un error y it queda sobre el final. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 91 del archivo C\+Alfabetos.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91                                   \{}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93     \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}} = \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.find(ida);}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}} == \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.end()) \{}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97         cout << \textcolor{stringliteral}{"error: el alfabeto no existe"} << endl;}
+\DoxyCodeLine{98         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{99     \}}
+\DoxyCodeLine{100     \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_alfabetos_a44db666c1ff901a93efd044ad66a422e}\label{class_c_alfabetos_a44db666c1ff901a93efd044ad66a422e}} 
+\index{CAlfabetos@{CAlfabetos}!compruebaespe@{compruebaespe}}
+\index{compruebaespe@{compruebaespe}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{compruebaespe()}{compruebaespe()}}
+{\footnotesize\ttfamily bool C\+Alfabetos\+::compruebaespe (\begin{DoxyParamCaption}\item[{string}]{ida }\end{DoxyParamCaption})}
+
+
+
+Devuelve si el alfabeto de identificador ida es especial. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  La string ida no está vacía y corresponde con un alfabeto existente. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna si el alfabeto de identificador ida es especial o no. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 104 del archivo C\+Alfabetos.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{104                                          \{}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106     \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}} = \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.find(ida);}
+\DoxyCodeLine{107     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}}-\/>second.esespecial();}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_alfabetos_aa70b0535254cb7134813e70c1ae3ecec}\label{class_c_alfabetos_aa70b0535254cb7134813e70c1ae3ecec}} 
+\index{CAlfabetos@{CAlfabetos}!buscaida@{buscaida}}
+\index{buscaida@{buscaida}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{buscaida()}{buscaida()}}
+{\footnotesize\ttfamily void C\+Alfabetos\+::buscaida (\begin{DoxyParamCaption}\item[{string}]{ida }\end{DoxyParamCaption})}
+
+
+
+Busca el alfabeto de identificador ida. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  La string ida no está vacía y corresponde con un alfabeto existente } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El iterador it queda sobre el alfabeto de identificador ida. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 111 del archivo C\+Alfabetos.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{111                                     \{}
+\DoxyCodeLine{112   }
+\DoxyCodeLine{113     \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}} = \mbox{\hyperlink{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}{Malfas}}.find(ida);}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_alfabetos_a5cc9dc7821edf505a9d9db0554e1c321}\label{class_c_alfabetos_a5cc9dc7821edf505a9d9db0554e1c321}} 
+\index{CAlfabetos@{CAlfabetos}!codificar\_sustitucion@{codificar\_sustitucion}}
+\index{codificar\_sustitucion@{codificar\_sustitucion}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{codificar\_sustitucion()}{codificar\_sustitucion()}}
+{\footnotesize\ttfamily char C\+Alfabetos\+::codificar\+\_\+sustitucion (\begin{DoxyParamCaption}\item[{char}]{m,  }\item[{char}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Codifica el char m con el char c y el alfabeto normal apuntado por el iterador it. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  El char m y c no están vacíos y el iterador it está sobre el alfabeto a codificar } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna un char resultado de la codificación. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 117 del archivo C\+Alfabetos.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{117                                                           \{}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119     \textcolor{keywordflow}{if} (m == -\/1) \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{120     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}}-\/>second.codificar\_sustitucion(m, c);}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_alfabetos_a198beb46b296ad4d2f5b9341061c1ed9}\label{class_c_alfabetos_a198beb46b296ad4d2f5b9341061c1ed9}} 
+\index{CAlfabetos@{CAlfabetos}!codificar\_sustitucion\_especial@{codificar\_sustitucion\_especial}}
+\index{codificar\_sustitucion\_especial@{codificar\_sustitucion\_especial}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{codificar\_sustitucion\_especial()}{codificar\_sustitucion\_especial()}}
+{\footnotesize\ttfamily char C\+Alfabetos\+::codificar\+\_\+sustitucion\+\_\+especial (\begin{DoxyParamCaption}\item[{char}]{m,  }\item[{char}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Codifica el char m con el char c y el alfabeto especial apuntado por el iterador it. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  El char m y c no están vacíos y el iterador it está sobre el alfabeto a codificar } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna un char resultado de la codificación. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 124 del archivo C\+Alfabetos.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{124                                                                    \{}
+\DoxyCodeLine{125     }
+\DoxyCodeLine{126     \textcolor{keywordflow}{if} (m == -\/1) \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{127     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}}-\/>second.codificar\_sustitucion\_especial(m, c);}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_alfabetos_a60ded2168d57db8f4759e708099df7cf}\label{class_c_alfabetos_a60ded2168d57db8f4759e708099df7cf}} 
+\index{CAlfabetos@{CAlfabetos}!decodificar\_sustitucion@{decodificar\_sustitucion}}
+\index{decodificar\_sustitucion@{decodificar\_sustitucion}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{decodificar\_sustitucion()}{decodificar\_sustitucion()}}
+{\footnotesize\ttfamily void C\+Alfabetos\+::decodificar\+\_\+sustitucion (\begin{DoxyParamCaption}\item[{string}]{ida,  }\item[{string \&}]{clave,  }\item[{string \&}]{m }\end{DoxyParamCaption})}
+
+
+
+Decodifica la string m con la clave si existe el alfabeto de identificador ida. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Existe \mbox{\hyperlink{class_c_alfabetos}{C\+Alfabetos}}, ida, clave y m y no están vacíos. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Decodifica el mensaje leido por sustitución y lo imprime por pantalla. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 131 del archivo C\+Alfabetos.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{131                                                                              \{}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{133     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_c_alfabetos_ac6532ce74b7bcc64438dd5de14edafdd}{existe}}(ida)) \{}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135         \textcolor{keywordtype}{string} s = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{136         \textcolor{keywordtype}{int} j = 0;}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{138         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}}-\/>second.esespecial()) \{}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{140             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < m.size(); ++i) \{}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142                 s += \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}}-\/>second.decodificar\_sustitucion\_especial(m[i], clave[j]);}
+\DoxyCodeLine{143                 ++j;}
+\DoxyCodeLine{144                 \textcolor{keywordflow}{if} (j == clave.size()) j = 0;}
+\DoxyCodeLine{145             \}}
+\DoxyCodeLine{146         \}}
+\DoxyCodeLine{147         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < m.size(); ++i) \{}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151                 s += \mbox{\hyperlink{class_c_alfabetos_ad82d8260fee08c059638517943847d01}{it}}-\/>second.decodificar\_sustitucion(m[i], clave[j]);}
+\DoxyCodeLine{152                 ++j;}
+\DoxyCodeLine{153                 \textcolor{keywordflow}{if} (j == clave.size()) j = 0;}
+\DoxyCodeLine{154             \}}
+\DoxyCodeLine{155         \}}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157         cout << \textcolor{charliteral}{'"'} << s << \textcolor{charliteral}{'"'} << endl;}
+\DoxyCodeLine{158     \}}
+\DoxyCodeLine{159 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_c_alfabetos_abe52e138c234e1a7495fc94e1dbd4b26}\label{class_c_alfabetos_abe52e138c234e1a7495fc94e1dbd4b26}} 
+\index{CAlfabetos@{CAlfabetos}!A@{A}}
+\index{A@{A}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily int C\+Alfabetos\+::A\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 19 del archivo C\+Alfabetos.\+hh.
+
+\mbox{\Hypertarget{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}\label{class_c_alfabetos_aa0ebd68cfab9ca2815e9a26e3382c998}} 
+\index{CAlfabetos@{CAlfabetos}!Malfas@{Malfas}}
+\index{Malfas@{Malfas}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{Malfas}{Malfas}}
+{\footnotesize\ttfamily map$<$string, \mbox{\hyperlink{class_alfabeto}{Alfabeto}}$>$ C\+Alfabetos\+::\+Malfas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 20 del archivo C\+Alfabetos.\+hh.
+
+\mbox{\Hypertarget{class_c_alfabetos_ad82d8260fee08c059638517943847d01}\label{class_c_alfabetos_ad82d8260fee08c059638517943847d01}} 
+\index{CAlfabetos@{CAlfabetos}!it@{it}}
+\index{it@{it}!CAlfabetos@{CAlfabetos}}
+\doxysubsubsection{\texorpdfstring{it}{it}}
+{\footnotesize\ttfamily map$<$string, \mbox{\hyperlink{class_alfabeto}{Alfabeto}}$>$\+::iterator C\+Alfabetos\+::it\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 21 del archivo C\+Alfabetos.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_alfabetos_8hh}{C\+Alfabetos.\+hh}}\item 
+\mbox{\hyperlink{_c_alfabetos_8cc}{C\+Alfabetos.\+cc}}\end{DoxyCompactItemize}

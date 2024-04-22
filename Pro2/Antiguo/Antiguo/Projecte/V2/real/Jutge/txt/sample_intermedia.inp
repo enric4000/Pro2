@@ -1,0 +1,91 @@
+4 8
+Grand_Slam
+Masters_1000
+ATP_500
+ATP_250
+2000 1200 720 360 180 90 45 10
+1000  600 360 180  90 45 25 10
+ 500  300 180  90  45 20  0  0
+ 250  150  90  45  20  0  0  0
+5
+Wimbledon 1
+Indian_Wells 2
+Barcelona 3
+Estoril 4
+Cincinnati 2
+50
+Djokovic
+Medvedev
+Zverev
+Tsitsipas
+Nadal
+Berrettini
+Rublev
+Ruud
+Auger-Aliassime
+Sinner
+Hurkacz
+Norrie
+Schwartzman
+Shapovalov
+Bautista
+Fritz
+Carreno
+Opelka
+Basilashvili
+Alcaraz
+Sonego
+Karatsev
+Isner
+Cilic
+Monfils
+Khachanov
+Garin
+Evans
+Federer
+Bublik
+Ramos
+De-Minaur
+Dimitrov
+Tiafoe
+Harris
+Fucsovics
+Delbonis
+Fognini
+Paul
+Korda
+Humbert
+Nishikori
+Davidovich
+Krajinovic
+Ivashka
+Lajovic
+Brooksby
+Goffin
+Paire
+Thiem
+listar_categorias
+iniciar_torneo Barcelona
+14
+ 4 5 6 13 15 17 20 24 25 26 27 31 33 37 
+nuevo_jugador Duckworth
+nj Bublik
+consultar_jugador Nadal
+cj Popyrin
+it Cincinnati
+32
+ 1 2 3 7 8 9 10 11 12 14 16 18 19 21 22 23
+ 28 29 30 32 34 35 36 38 40 42 44 45 46 47 48 49
+nj Popyrin
+nuevo_torneo Casablanca 5
+nt Casablanca 4
+nt Estoril 4
+baja_jugador Thiem
+bj Bonzi
+baja_torneo Kiev
+bt Estoril
+listar_torneos
+listar_ranking
+listar_jugadores
+fin
+

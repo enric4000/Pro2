@@ -1,0 +1,77 @@
+\hypertarget{classtorneo}{}\doxysection{Referència de la Classe torneo}
+\label{classtorneo}\index{torneo@{torneo}}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorneo_a8922a3a39e14222f2ffb9faf2723550a}{torneo}} (const pair$<$ string, int $>$ \&par1)
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtorneo_adc7dfd865d9a81fbca1b2749ff9f2300}{iniciatorneo}} (\mbox{\hyperlink{classranking}{ranking}} \&rank)
+\begin{DoxyCompactList}\small\item\em empieza el torneo, entran y se tratan los resultados \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtorneo_a801b57cde7347a89e1aea6d5c491a8e1}{finalizatorneo}} (\mbox{\hyperlink{classranking}{ranking}} \&rank)
+\begin{DoxyCompactList}\small\item\em consulta el torneo y saca los resultados \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+
+
+Definició a la línia 17 del fitxer torneo.\+hh.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{classtorneo_a8922a3a39e14222f2ffb9faf2723550a}\label{classtorneo_a8922a3a39e14222f2ffb9faf2723550a}} 
+\index{torneo@{torneo}!torneo@{torneo}}
+\index{torneo@{torneo}!torneo@{torneo}}
+\doxysubsubsection{\texorpdfstring{torneo()}{torneo()}}
+{\footnotesize\ttfamily torneo\+::torneo (\begin{DoxyParamCaption}\item[{const pair$<$ string, int $>$ \&}]{par1 }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar un torneo. \begin{DoxyPrecond}{Precondició}
+{\itshape un pair con el nombre y categoria del circuito} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultado es un torneo de categoria c sin jugadores 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{classtorneo_adc7dfd865d9a81fbca1b2749ff9f2300}\label{classtorneo_adc7dfd865d9a81fbca1b2749ff9f2300}} 
+\index{torneo@{torneo}!iniciatorneo@{iniciatorneo}}
+\index{iniciatorneo@{iniciatorneo}!torneo@{torneo}}
+\doxysubsubsection{\texorpdfstring{iniciatorneo()}{iniciatorneo()}}
+{\footnotesize\ttfamily void torneo\+::iniciatorneo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classranking}{ranking}} \&}]{rank }\end{DoxyParamCaption})}
+
+
+
+empieza el torneo, entran y se tratan los resultados 
+
+\begin{DoxyPrecond}{Precondició}
+ranking de jugadores 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+actualiza el ranking y el torneo 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classtorneo_a801b57cde7347a89e1aea6d5c491a8e1}\label{classtorneo_a801b57cde7347a89e1aea6d5c491a8e1}} 
+\index{torneo@{torneo}!finalizatorneo@{finalizatorneo}}
+\index{finalizatorneo@{finalizatorneo}!torneo@{torneo}}
+\doxysubsubsection{\texorpdfstring{finalizatorneo()}{finalizatorneo()}}
+{\footnotesize\ttfamily void torneo\+::finalizatorneo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classranking}{ranking}} \&}]{rank }\end{DoxyParamCaption})}
+
+
+
+consulta el torneo y saca los resultados 
+
+\begin{DoxyPrecond}{Precondició}
+ranking de jugadores 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+saca los resultados del torneo por la terminal 
+\end{DoxyPostcond}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{torneo_8hh}{torneo.\+hh}}\end{DoxyCompactItemize}

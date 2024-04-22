@@ -1,0 +1,185 @@
+\hypertarget{class_c_mensajes}{}\doxysection{Referència de la Classe C\+Mensajes}
+\label{class_c_mensajes}\index{CMensajes@{CMensajes}}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_mensajes_a8a35cdbcf409aeab8e3135a518908a2b}{C\+Mensajes}} (const int \&M)
+\begin{DoxyCompactList}\small\item\em Constructora con número de mensajes. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_c_mensajes_a5cabf2e7c21d34a7f6d3cd29802f341a}{nm}} ()
+\begin{DoxyCompactList}\small\item\em Lee y añade un mensaje. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_c_mensajes_a16a2a87151a673ad31c9b8318b7d2c6d}{bm}} ()
+\begin{DoxyCompactList}\small\item\em Lee un idm, se guarda el ida y borra ese mensaje. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mensajes_aa6bc93dc45b5a692139e49928a6a281f}{lm}} ()
+\begin{DoxyCompactList}\small\item\em Lista todos los mensajes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mensajes_a9dc4daf9d241ea732592da6845a2f090}{codipermuguard}} ()
+\begin{DoxyCompactList}\small\item\em Lee el idm y entra a ese mensaje. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mensajes_a8cf9c93442e47b8a6f469eb8f8c17f04}{codipermu}} ()
+\begin{DoxyCompactList}\small\item\em Lee un mensaje, declara un mensaje, y entra a él. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mensajes_aecbaaae5df1eb54b83860c2f374c6799}{decopermu}} ()
+\begin{DoxyCompactList}\small\item\em Lee una ida declara un mensaje, y entra a él. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mensajes_a5334ac0b5a75435e34ebc61b7b39c29a}{codisusguard}} (const \mbox{\hyperlink{class_c_alfabetos}{C\+Alfabetos}} \&alfas)
+\begin{DoxyCompactList}\small\item\em Lee el idm y entra a su clase a pedirle char por char y con el char de la misma posición de la clave entra a su alfabeto, lo codifica y los va imprimiendo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_mensajes_a8f245f4cf6a042d2d1c720b549eb9b40}{codisus}} (const \mbox{\hyperlink{class_c_alfabetos}{C\+Alfabetos}} \&alfas)
+\begin{DoxyCompactList}\small\item\em Lee el mensaje y entra a su clase a pedirle char por char y con el char de la misma posición de la clave entra a su alfabeto, lo codifica y los va imprimiendo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+
+
+Definició a la línia 15 del fitxer C\+Mensajes.\+hh.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_c_mensajes_a8a35cdbcf409aeab8e3135a518908a2b}\label{class_c_mensajes_a8a35cdbcf409aeab8e3135a518908a2b}} 
+\index{CMensajes@{CMensajes}!CMensajes@{CMensajes}}
+\index{CMensajes@{CMensajes}!CMensajes@{CMensajes}}
+\doxysubsubsection{\texorpdfstring{CMensajes()}{CMensajes()}}
+{\footnotesize\ttfamily C\+Mensajes\+::\+C\+Mensajes (\begin{DoxyParamCaption}\item[{const int \&}]{M }\end{DoxyParamCaption})}
+
+
+
+Constructora con número de mensajes. 
+
+Se ejecuta automáticamente al declarar un conjunto de mensajes. \begin{DoxyPrecond}{Precondició}
+{\itshape un numero inicial de mensajes $>$ 0 } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultado es un conjunto de M mensajes 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_c_mensajes_a5cabf2e7c21d34a7f6d3cd29802f341a}\label{class_c_mensajes_a5cabf2e7c21d34a7f6d3cd29802f341a}} 
+\index{CMensajes@{CMensajes}!nm@{nm}}
+\index{nm@{nm}!CMensajes@{CMensajes}}
+\doxysubsubsection{\texorpdfstring{nm()}{nm()}}
+{\footnotesize\ttfamily string C\+Mensajes\+::nm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lee y añade un mensaje. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El map de Cmensajes con el nuevo mensaje incluido y devuelve el ida. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_c_mensajes_a16a2a87151a673ad31c9b8318b7d2c6d}\label{class_c_mensajes_a16a2a87151a673ad31c9b8318b7d2c6d}} 
+\index{CMensajes@{CMensajes}!bm@{bm}}
+\index{bm@{bm}!CMensajes@{CMensajes}}
+\doxysubsubsection{\texorpdfstring{bm()}{bm()}}
+{\footnotesize\ttfamily string C\+Mensajes\+::bm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lee un idm, se guarda el ida y borra ese mensaje. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El map de Cmensajes sin el mensaje de identificador idm y devuelve una string ida. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_c_mensajes_aa6bc93dc45b5a692139e49928a6a281f}\label{class_c_mensajes_aa6bc93dc45b5a692139e49928a6a281f}} 
+\index{CMensajes@{CMensajes}!lm@{lm}}
+\index{lm@{lm}!CMensajes@{CMensajes}}
+\doxysubsubsection{\texorpdfstring{lm()}{lm()}}
+{\footnotesize\ttfamily void C\+Mensajes\+::lm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lista todos los mensajes. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Saca por la terminal todos los mensajes. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_c_mensajes_a9dc4daf9d241ea732592da6845a2f090}\label{class_c_mensajes_a9dc4daf9d241ea732592da6845a2f090}} 
+\index{CMensajes@{CMensajes}!codipermuguard@{codipermuguard}}
+\index{codipermuguard@{codipermuguard}!CMensajes@{CMensajes}}
+\doxysubsubsection{\texorpdfstring{codipermuguard()}{codipermuguard()}}
+{\footnotesize\ttfamily void C\+Mensajes\+::codipermuguard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lee el idm y entra a ese mensaje. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Entra a codificar del mensaje idm por permutación. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_c_mensajes_a8cf9c93442e47b8a6f469eb8f8c17f04}\label{class_c_mensajes_a8cf9c93442e47b8a6f469eb8f8c17f04}} 
+\index{CMensajes@{CMensajes}!codipermu@{codipermu}}
+\index{codipermu@{codipermu}!CMensajes@{CMensajes}}
+\doxysubsubsection{\texorpdfstring{codipermu()}{codipermu()}}
+{\footnotesize\ttfamily void C\+Mensajes\+::codipermu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lee un mensaje, declara un mensaje, y entra a él. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Entra a codificar del mensaje leido por permutación. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_c_mensajes_aecbaaae5df1eb54b83860c2f374c6799}\label{class_c_mensajes_aecbaaae5df1eb54b83860c2f374c6799}} 
+\index{CMensajes@{CMensajes}!decopermu@{decopermu}}
+\index{decopermu@{decopermu}!CMensajes@{CMensajes}}
+\doxysubsubsection{\texorpdfstring{decopermu()}{decopermu()}}
+{\footnotesize\ttfamily void C\+Mensajes\+::decopermu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lee una ida declara un mensaje, y entra a él. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Entra a decodificar del mensaje leido por permutación. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_c_mensajes_a5334ac0b5a75435e34ebc61b7b39c29a}\label{class_c_mensajes_a5334ac0b5a75435e34ebc61b7b39c29a}} 
+\index{CMensajes@{CMensajes}!codisusguard@{codisusguard}}
+\index{codisusguard@{codisusguard}!CMensajes@{CMensajes}}
+\doxysubsubsection{\texorpdfstring{codisusguard()}{codisusguard()}}
+{\footnotesize\ttfamily void C\+Mensajes\+::codisusguard (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_alfabetos}{C\+Alfabetos}} \&}]{alfas }\end{DoxyParamCaption})}
+
+
+
+Lee el idm y entra a su clase a pedirle char por char y con el char de la misma posición de la clave entra a su alfabeto, lo codifica y los va imprimiendo. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Existe \mbox{\hyperlink{class_c_alfabetos}{C\+Alfabetos}} y no está vacío} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Codifica el mensaje idm por sustitución y lo imprime por pantalla. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_c_mensajes_a8f245f4cf6a042d2d1c720b549eb9b40}\label{class_c_mensajes_a8f245f4cf6a042d2d1c720b549eb9b40}} 
+\index{CMensajes@{CMensajes}!codisus@{codisus}}
+\index{codisus@{codisus}!CMensajes@{CMensajes}}
+\doxysubsubsection{\texorpdfstring{codisus()}{codisus()}}
+{\footnotesize\ttfamily void C\+Mensajes\+::codisus (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_alfabetos}{C\+Alfabetos}} \&}]{alfas }\end{DoxyParamCaption})}
+
+
+
+Lee el mensaje y entra a su clase a pedirle char por char y con el char de la misma posición de la clave entra a su alfabeto, lo codifica y los va imprimiendo. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape Existe \mbox{\hyperlink{class_c_alfabetos}{C\+Alfabetos}} y no está vacío} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Codifica el mensaje leido por sustitución y lo imprime por pantalla. 
+\end{DoxyPostcond}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_mensajes_8hh}{C\+Mensajes.\+hh}}\end{DoxyCompactItemize}

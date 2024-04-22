@@ -1,0 +1,92 @@
+\hypertarget{class_mensaje}{}\doxysection{Referència de la Classe Mensaje}
+\label{class_mensaje}\index{Mensaje@{Mensaje}}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mensaje_a622a0af4a2de05e7c413711fe0031880}{Mensaje}} (string m, string ida)
+\begin{DoxyCompactList}\small\item\em Constructora de un mensaje. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_mensaje_aa3a8f5b122c5752cf6593d0ff9b490aa}{devolver\+\_\+char}} (int pos)
+\begin{DoxyCompactList}\small\item\em Accede al string mensaje y devuelve su char de posición pos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mensaje_ad8476d7473654c7534a31632d79dc007}{codipermu}} ()
+\begin{DoxyCompactList}\small\item\em Lee el número de bloques crea el árbol y codifica el mensaje por permutación. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mensaje_a0e1f12d37c832856b4be3d8305368fa1}{decopermu}} ()
+\begin{DoxyCompactList}\small\item\em Lee el número de bloques crea el árbol y decodifica el mensaje por permutación. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+
+
+Definició a la línia 13 del fitxer Mensaje.\+hh.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_mensaje_a622a0af4a2de05e7c413711fe0031880}\label{class_mensaje_a622a0af4a2de05e7c413711fe0031880}} 
+\index{Mensaje@{Mensaje}!Mensaje@{Mensaje}}
+\index{Mensaje@{Mensaje}!Mensaje@{Mensaje}}
+\doxysubsubsection{\texorpdfstring{Mensaje()}{Mensaje()}}
+{\footnotesize\ttfamily Mensaje\+::\+Mensaje (\begin{DoxyParamCaption}\item[{string}]{m,  }\item[{string}]{ida }\end{DoxyParamCaption})}
+
+
+
+Constructora de un mensaje. 
+
+Se ejecuta automáticamente al declarar un mensaje. \begin{DoxyPrecond}{Precondició}
+{\itshape  Un string del mensaje m} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultado es un mensaje de string m. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_mensaje_aa3a8f5b122c5752cf6593d0ff9b490aa}\label{class_mensaje_aa3a8f5b122c5752cf6593d0ff9b490aa}} 
+\index{Mensaje@{Mensaje}!devolver\_char@{devolver\_char}}
+\index{devolver\_char@{devolver\_char}!Mensaje@{Mensaje}}
+\doxysubsubsection{\texorpdfstring{devolver\_char()}{devolver\_char()}}
+{\footnotesize\ttfamily char Mensaje\+::devolver\+\_\+char (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Accede al string mensaje y devuelve su char de posición pos. 
+
+\begin{DoxyVerb}\pre <em>Un mensaje no vacío y un entero pos >= 0</em>
+\post Devuelve el char de posición pos del mensaje con identificador idm.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_mensaje_ad8476d7473654c7534a31632d79dc007}\label{class_mensaje_ad8476d7473654c7534a31632d79dc007}} 
+\index{Mensaje@{Mensaje}!codipermu@{codipermu}}
+\index{codipermu@{codipermu}!Mensaje@{Mensaje}}
+\doxysubsubsection{\texorpdfstring{codipermu()}{codipermu()}}
+{\footnotesize\ttfamily void Mensaje\+::codipermu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lee el número de bloques crea el árbol y codifica el mensaje por permutación. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape El mensaje en el que estamos no está vacío} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Codifica el mensaje m por permutación y lo imprime. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_mensaje_a0e1f12d37c832856b4be3d8305368fa1}\label{class_mensaje_a0e1f12d37c832856b4be3d8305368fa1}} 
+\index{Mensaje@{Mensaje}!decopermu@{decopermu}}
+\index{decopermu@{decopermu}!Mensaje@{Mensaje}}
+\doxysubsubsection{\texorpdfstring{decopermu()}{decopermu()}}
+{\footnotesize\ttfamily void Mensaje\+::decopermu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lee el número de bloques crea el árbol y decodifica el mensaje por permutación. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape El mensaje en el que estamos no está vacío} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Decodifica el mensaje m por permutación y lo imprime. 
+\end{DoxyPostcond}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_mensaje_8hh}{Mensaje.\+hh}}\end{DoxyCompactItemize}

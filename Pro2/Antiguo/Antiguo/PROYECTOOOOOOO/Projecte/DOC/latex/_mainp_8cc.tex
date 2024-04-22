@@ -1,0 +1,120 @@
+\hypertarget{_mainp_8cc}{}\doxysection{Referència del Fitxer Mainp.\+cc}
+\label{_mainp_8cc}\index{Mainp.cc@{Mainp.cc}}
+Inclou el graf de dependències per a Mainp.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{_mainp_8cc__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funcions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_mainp_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentació de les Funcions}
+\mbox{\Hypertarget{_mainp_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_mainp_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Mainp.cc@{Mainp.cc}!main@{main}}
+\index{main@{main}!Mainp.cc@{Mainp.cc}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definició a la línia 17 del fitxer Mainp.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17            \{}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19   \textcolor{keywordtype}{int} C, K;}
+\DoxyCodeLine{20   cin >> C >> K;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22   \mbox{\hyperlink{class_ccategorias}{Ccategorias}} Ccat(C);}
+\DoxyCodeLine{23   Ccat.añadirpuntosnivel(C, K);}
+\DoxyCodeLine{24   }
+\DoxyCodeLine{25   \textcolor{keywordtype}{int} T;}
+\DoxyCodeLine{26   cin >> T;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28   \mbox{\hyperlink{classcircuito}{circuito}} circu(T);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30   \textcolor{keywordtype}{int} P;}
+\DoxyCodeLine{31   cin >> P;}
+\DoxyCodeLine{32   \textcolor{keywordtype}{string} p;}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34   \mbox{\hyperlink{classranking}{ranking}} rank;}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} l = 0; l < P; ++l)\{}
+\DoxyCodeLine{37     cin >> p;}
+\DoxyCodeLine{38     rank.\mbox{\hyperlink{classranking_a0edfe8a40337b53808221690bade7e8f}{aj}}(p);}
+\DoxyCodeLine{39   \}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41   \textcolor{keywordtype}{string} com;}
+\DoxyCodeLine{42   \textcolor{keywordtype}{string} t;}
+\DoxyCodeLine{43   cin >> com;}
+\DoxyCodeLine{44   \textcolor{keywordflow}{while} (com != \textcolor{stringliteral}{"fin"}) \{}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{keywordflow}{if} (com == \textcolor{stringliteral}{"nuevo\_jugador"} or com == \textcolor{stringliteral}{"nj"})\{}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49       cin >> p;}
+\DoxyCodeLine{50       rank.\mbox{\hyperlink{classranking_a0edfe8a40337b53808221690bade7e8f}{aj}}(p);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52     \}}
+\DoxyCodeLine{53     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(com == \textcolor{stringliteral}{"nuevo\_torneo"} or com == \textcolor{stringliteral}{"nt"})\{}
+\DoxyCodeLine{54       \textcolor{keywordtype}{int} c;}
+\DoxyCodeLine{55       cin >> t >> c;}
+\DoxyCodeLine{56       pair <string, int> par1;}
+\DoxyCodeLine{57       par1.first = t;}
+\DoxyCodeLine{58       par1.second = c;}
+\DoxyCodeLine{59       circu.at(par1);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \}}
+\DoxyCodeLine{62     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(com == \textcolor{stringliteral}{"baja\_jugador"} or com == \textcolor{stringliteral}{"bj"})\{}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64       cin >> p;}
+\DoxyCodeLine{65       rank.\mbox{\hyperlink{classranking_a7c24e5d21c96d15118cbdad7d8ec40e9}{bj}}(p);}
+\DoxyCodeLine{66     \}}
+\DoxyCodeLine{67     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(com == \textcolor{stringliteral}{"baja\_torneo"} or com == \textcolor{stringliteral}{"bt"})\{}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69       cin >> t;}
+\DoxyCodeLine{70       circu.bt(t);}
+\DoxyCodeLine{71     \}}
+\DoxyCodeLine{72     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(com == \textcolor{stringliteral}{"iniciar\_torneo"} or com == \textcolor{stringliteral}{"it"})\{}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74       cin >> t;}
+\DoxyCodeLine{75       circu.it(rank, t);}
+\DoxyCodeLine{76     \}}
+\DoxyCodeLine{77     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(com == \textcolor{stringliteral}{"finalizar\_torneo"} or com == \textcolor{stringliteral}{"ft"})\{}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79       cin >> t;}
+\DoxyCodeLine{80       circu.ft(rank, t);}
+\DoxyCodeLine{81     \}}
+\DoxyCodeLine{82     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(com == \textcolor{stringliteral}{"listar\_ranking"} or com == \textcolor{stringliteral}{"lr"})\{}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84       rank.\mbox{\hyperlink{classranking_a1b3507bc6b09abc4ee312386c2de5996}{lr}}();}
+\DoxyCodeLine{85     \}}
+\DoxyCodeLine{86     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(com == \textcolor{stringliteral}{"listar\_jugadores"} or com == \textcolor{stringliteral}{"lj"})\{}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88       rank.\mbox{\hyperlink{classranking_a9e0506a5e30c8854368364db04ab68aa}{lj}}();}
+\DoxyCodeLine{89     \}}
+\DoxyCodeLine{90     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(com == \textcolor{stringliteral}{"consultar\_jugador"} or com == \textcolor{stringliteral}{"cj"})\{}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92       cin >> p;}
+\DoxyCodeLine{93       rank.\mbox{\hyperlink{classranking_a6e8d1b05baf28d848fdcd624572eb82d}{cj}}(p);}
+\DoxyCodeLine{94     \}}
+\DoxyCodeLine{95     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(com == \textcolor{stringliteral}{"listar\_torneos"} or com == \textcolor{stringliteral}{"lt"})\{}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97       circu.lt();}
+\DoxyCodeLine{98     \}}
+\DoxyCodeLine{99     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(com == \textcolor{stringliteral}{"listar\_categorías"} or com == \textcolor{stringliteral}{"lc"})\{}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101       Ccat.lc();}
+\DoxyCodeLine{102     \}}
+\DoxyCodeLine{103     cin >> com;}
+\DoxyCodeLine{104   \}}
+\DoxyCodeLine{105 \}}
+
+\end{DoxyCode}

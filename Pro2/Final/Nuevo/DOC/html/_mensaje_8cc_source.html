@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pràctica Pro2: Fichero Fuente Mensaje.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica Pro2
+   &#160;<span id="projectnumber">Octubre 2022</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Mensaje.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_mensaje_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mensaje_8hh.html">Mensaje.hh</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;BinTree.hh&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_mensaje.html#ac758ff57b108a7fd840ebb38eb6ffe02">    8</a></span>&#160;BinTree&lt;char&gt; <a class="code" href="class_mensaje.html#ac758ff57b108a7fd840ebb38eb6ffe02">Mensaje::crea_arbol</a>(<span class="keywordtype">int</span> valor, <span class="keywordtype">int</span> posinicio, <span class="keywordtype">int</span> posfinal)<span class="keyword">const </span>{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">int</span> posmitad = (posfinal + posinicio)/2;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">int</span> intervalo = posfinal - posinicio;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> posdere, posizq;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    posdere = (posmitad+1+posfinal)/2;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    posizq = (posmitad-1+posinicio)/2;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">if</span> (intervalo &gt; 1) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        BinTree&lt;char&gt; left = <a class="code" href="class_mensaje.html#ac758ff57b108a7fd840ebb38eb6ffe02">crea_arbol</a>(posdere, posinicio, posmitad-1);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        BinTree&lt;char&gt; right = <a class="code" href="class_mensaje.html#ac758ff57b108a7fd840ebb38eb6ffe02">crea_arbol</a>(posizq, posmitad+1, posfinal);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> BinTree&lt;char&gt;(<a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a>[valor], left, right);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (intervalo == 1) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> BinTree&lt;char&gt;(<a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a>[valor], BinTree&lt;char&gt;(), BinTree&lt;char&gt;(<a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a>[posfinal]));</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> BinTree&lt;char&gt;(<a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a>[valor]);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_mensaje.html#a35a7abdedaf6d3a10689eecdcbea46b3">   33</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_mensaje.html#a35a7abdedaf6d3a10689eecdcbea46b3">Mensaje::imprime_arbol</a>(<span class="keyword">const</span> BinTree&lt;char&gt; &amp;arbol)<span class="keyword">const </span>{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> (not arbol.empty()) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_mensaje.html#a35a7abdedaf6d3a10689eecdcbea46b3">imprime_arbol</a>(arbol.left());</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        cout &lt;&lt; arbol.value();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="class_mensaje.html#a35a7abdedaf6d3a10689eecdcbea46b3">imprime_arbol</a>(arbol.right());</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_mensaje.html#a55acc51ccd949870b4e69c924ee6b093">   43</a></span>&#160;<a class="code" href="class_mensaje.html#a7b8b4ca08f400fef32eaffeec00f65b3">Mensaje::Mensaje</a>(<span class="keywordtype">string</span> ida) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    this-&gt;ida = <a class="code" href="class_mensaje.html#a48e0fe3ebc3c180467fcacd9f56fed86">ida</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    cin.ignore();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    getline(cin, this-&gt;<a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_mensaje.html#a7b8b4ca08f400fef32eaffeec00f65b3">   51</a></span>&#160;<a class="code" href="class_mensaje.html#a7b8b4ca08f400fef32eaffeec00f65b3">Mensaje::Mensaje</a>() {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    cin.ignore();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    getline(cin, this-&gt;<a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_mensaje.html#a48e0fe3ebc3c180467fcacd9f56fed86">ida</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_mensaje.html#a5eec354a141ce11c7c77f0f96186cc46">   59</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_mensaje.html#a5eec354a141ce11c7c77f0f96186cc46">Mensaje::sice</a>() {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a>.size();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_mensaje.html#a92f491285ea87b271e7897b9e5043e8c">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_mensaje.html#a92f491285ea87b271e7897b9e5043e8c">Mensaje::escribir_mensaje</a>() {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    cout &lt;&lt; <a class="code" href="class_mensaje.html#a48e0fe3ebc3c180467fcacd9f56fed86">ida</a> &lt;&lt; endl &lt;&lt; <span class="charliteral">&#39;&quot;&#39;</span> &lt;&lt; <a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a> &lt;&lt; <span class="charliteral">&#39;&quot;&#39;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_mensaje.html#a7df85395e3c5b5b6cfa174ca7cc3c399">   71</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_mensaje.html#a7df85395e3c5b5b6cfa174ca7cc3c399">Mensaje::devuelve_ida</a>() {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_mensaje.html#a48e0fe3ebc3c180467fcacd9f56fed86">ida</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_mensaje.html#a9c21ac5b7ba4ffe28f0b99bbc3e24d1e">   77</a></span>&#160;<span class="keywordtype">char</span> <a class="code" href="class_mensaje.html#a9c21ac5b7ba4ffe28f0b99bbc3e24d1e">Mensaje::devolver_char</a>(<span class="keywordtype">int</span> pos)<span class="keyword">const </span>{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (pos &lt; <a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a>.size()) <span class="keywordflow">return</span> <a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a>[pos];</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_mensaje.html#af626b8498acc92498dda2d00422e0702">   84</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_mensaje.html#af626b8498acc92498dda2d00422e0702">Mensaje::codificar_permutacion</a>(<span class="keywordtype">int</span> b)<span class="keyword">const </span>{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    BinTree&lt;char&gt; arboliko;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (b &gt;= <a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a>.size()) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\&quot;&quot;</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        arboliko = <a class="code" href="class_mensaje.html#ac758ff57b108a7fd840ebb38eb6ffe02">crea_arbol</a>((<a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a>.size()-1)/2, 0, <a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a>.size()-1);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="class_mensaje.html#a35a7abdedaf6d3a10689eecdcbea46b3">imprime_arbol</a>(arboliko);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\&quot;&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\&quot;&quot;</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">int</span> j = 0;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">for</span> (i = 0; j &lt; <a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a>.size()/b; i += b) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            arboliko = <a class="code" href="class_mensaje.html#ac758ff57b108a7fd840ebb38eb6ffe02">crea_arbol</a>((i*2+b-1)/2, i, i+b - 1);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="class_mensaje.html#a35a7abdedaf6d3a10689eecdcbea46b3">imprime_arbol</a>(arboliko);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            ++j;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">if</span> (b != 1) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            arboliko = <a class="code" href="class_mensaje.html#ac758ff57b108a7fd840ebb38eb6ffe02">crea_arbol</a>((<a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a>.size() + i - 1)/2, i, <a class="code" href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">m</a>.size()-1);  </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <a class="code" href="class_mensaje.html#a35a7abdedaf6d3a10689eecdcbea46b3">imprime_arbol</a>(arboliko);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\&quot;&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_mensaje_html_ac758ff57b108a7fd840ebb38eb6ffe02"><div class="ttname"><a href="class_mensaje.html#ac758ff57b108a7fd840ebb38eb6ffe02">Mensaje::crea_arbol</a></div><div class="ttdeci">BinTree&lt; char &gt; crea_arbol(int valor, int posinicio, int posfinal) const</div><div class="ttdoc">Crea un arbol ya con los nodos ya invertidos en posición.</div><div class="ttdef"><b>Definition:</b> <a href="_mensaje_8cc_source.html#l00008">Mensaje.cc:8</a></div></div>
+<div class="ttc" id="aclass_mensaje_html_a7df85395e3c5b5b6cfa174ca7cc3c399"><div class="ttname"><a href="class_mensaje.html#a7df85395e3c5b5b6cfa174ca7cc3c399">Mensaje::devuelve_ida</a></div><div class="ttdeci">string devuelve_ida()</div><div class="ttdoc">Devuelve el ida del mensaje.</div><div class="ttdef"><b>Definition:</b> <a href="_mensaje_8cc_source.html#l00071">Mensaje.cc:71</a></div></div>
+<div class="ttc" id="aclass_mensaje_html_a48e0fe3ebc3c180467fcacd9f56fed86"><div class="ttname"><a href="class_mensaje.html#a48e0fe3ebc3c180467fcacd9f56fed86">Mensaje::ida</a></div><div class="ttdeci">string ida</div><div class="ttdef"><b>Definition:</b> <a href="_mensaje_8hh_source.html#l00017">Mensaje.hh:17</a></div></div>
+<div class="ttc" id="aclass_mensaje_html_a9c21ac5b7ba4ffe28f0b99bbc3e24d1e"><div class="ttname"><a href="class_mensaje.html#a9c21ac5b7ba4ffe28f0b99bbc3e24d1e">Mensaje::devolver_char</a></div><div class="ttdeci">char devolver_char(int pos) const</div><div class="ttdoc">Accede al string m de mensaje y devuelve su char de posición pos.</div><div class="ttdef"><b>Definition:</b> <a href="_mensaje_8cc_source.html#l00077">Mensaje.cc:77</a></div></div>
+<div class="ttc" id="aclass_mensaje_html_a7b8b4ca08f400fef32eaffeec00f65b3"><div class="ttname"><a href="class_mensaje.html#a7b8b4ca08f400fef32eaffeec00f65b3">Mensaje::Mensaje</a></div><div class="ttdeci">Mensaje()</div><div class="ttdoc">Constructora de un mensaje sin parámetros.</div><div class="ttdef"><b>Definition:</b> <a href="_mensaje_8cc_source.html#l00051">Mensaje.cc:51</a></div></div>
+<div class="ttc" id="aclass_mensaje_html_abd9db97a3fd46643d5db03c287f95ae7"><div class="ttname"><a href="class_mensaje.html#abd9db97a3fd46643d5db03c287f95ae7">Mensaje::m</a></div><div class="ttdeci">string m</div><div class="ttdef"><b>Definition:</b> <a href="_mensaje_8hh_source.html#l00017">Mensaje.hh:17</a></div></div>
+<div class="ttc" id="aclass_mensaje_html_a5eec354a141ce11c7c77f0f96186cc46"><div class="ttname"><a href="class_mensaje.html#a5eec354a141ce11c7c77f0f96186cc46">Mensaje::sice</a></div><div class="ttdeci">int sice()</div><div class="ttdoc">Accede al string m del mensaje y devuelve su size().</div><div class="ttdef"><b>Definition:</b> <a href="_mensaje_8cc_source.html#l00059">Mensaje.cc:59</a></div></div>
+<div class="ttc" id="a_mensaje_8hh_html"><div class="ttname"><a href="_mensaje_8hh.html">Mensaje.hh</a></div><div class="ttdoc">Especificación de la clase mensaje.</div></div>
+<div class="ttc" id="aclass_mensaje_html_a35a7abdedaf6d3a10689eecdcbea46b3"><div class="ttname"><a href="class_mensaje.html#a35a7abdedaf6d3a10689eecdcbea46b3">Mensaje::imprime_arbol</a></div><div class="ttdeci">void imprime_arbol(const BinTree&lt; char &gt; &amp;arbol) const</div><div class="ttdoc">Imprime el arbol creado anteriormente en inorden.</div><div class="ttdef"><b>Definition:</b> <a href="_mensaje_8cc_source.html#l00033">Mensaje.cc:33</a></div></div>
+<div class="ttc" id="aclass_mensaje_html_a92f491285ea87b271e7897b9e5043e8c"><div class="ttname"><a href="class_mensaje.html#a92f491285ea87b271e7897b9e5043e8c">Mensaje::escribir_mensaje</a></div><div class="ttdeci">void escribir_mensaje()</div><div class="ttdoc">Escribe el mensaje por la terminal.</div><div class="ttdef"><b>Definition:</b> <a href="_mensaje_8cc_source.html#l00065">Mensaje.cc:65</a></div></div>
+<div class="ttc" id="aclass_mensaje_html_af626b8498acc92498dda2d00422e0702"><div class="ttname"><a href="class_mensaje.html#af626b8498acc92498dda2d00422e0702">Mensaje::codificar_permutacion</a></div><div class="ttdeci">void codificar_permutacion(int b) const</div><div class="ttdoc">Crea el árbol de la string m con b y lo imprime.</div><div class="ttdef"><b>Definition:</b> <a href="_mensaje_8cc_source.html#l00084">Mensaje.cc:84</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

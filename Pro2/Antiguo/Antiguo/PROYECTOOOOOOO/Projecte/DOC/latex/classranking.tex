@@ -1,0 +1,131 @@
+\hypertarget{classranking}{}\doxysection{Referència de la Classe ranking}
+\label{classranking}\index{ranking@{ranking}}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classranking_a70de401c3bcb97d8b781c6fb53931ee0}{ranking}} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classranking_a0edfe8a40337b53808221690bade7e8f}{aj}} (const string \&p)
+\begin{DoxyCompactList}\small\item\em crea un jugador de nombre p \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classranking_a6e8d1b05baf28d848fdcd624572eb82d}{cj}} (const string \&p)
+\begin{DoxyCompactList}\small\item\em consulta el jugador de nombre p \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classranking_a7c24e5d21c96d15118cbdad7d8ec40e9}{bj}} (const string \&p)
+\begin{DoxyCompactList}\small\item\em elimina a p de la lista \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classranking_a1b3507bc6b09abc4ee312386c2de5996}{lr}} ()
+\begin{DoxyCompactList}\small\item\em saca por la terminal la lista del ranking \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classranking_a9e0506a5e30c8854368364db04ab68aa}{lj}} ()
+\begin{DoxyCompactList}\small\item\em crea una lista ordenada el orden alfabético y la saca por la terminal \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+
+
+Definició a la línia 16 del fitxer ranking.\+hh.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{classranking_a70de401c3bcb97d8b781c6fb53931ee0}\label{classranking_a70de401c3bcb97d8b781c6fb53931ee0}} 
+\index{ranking@{ranking}!ranking@{ranking}}
+\index{ranking@{ranking}!ranking@{ranking}}
+\doxysubsubsection{\texorpdfstring{ranking()}{ranking()}}
+{\footnotesize\ttfamily ranking\+::ranking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar una ranking. \begin{DoxyPrecond}{Precondició}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultado es una ranking vacio 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{classranking_a0edfe8a40337b53808221690bade7e8f}\label{classranking_a0edfe8a40337b53808221690bade7e8f}} 
+\index{ranking@{ranking}!aj@{aj}}
+\index{aj@{aj}!ranking@{ranking}}
+\doxysubsubsection{\texorpdfstring{aj()}{aj()}}
+{\footnotesize\ttfamily void ranking\+::aj (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption})}
+
+
+
+crea un jugador de nombre p 
+
+\begin{DoxyPrecond}{Precondició}
+un nombre p 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el jugador añadido al ranking en último lugar 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classranking_a6e8d1b05baf28d848fdcd624572eb82d}\label{classranking_a6e8d1b05baf28d848fdcd624572eb82d}} 
+\index{ranking@{ranking}!cj@{cj}}
+\index{cj@{cj}!ranking@{ranking}}
+\doxysubsubsection{\texorpdfstring{cj()}{cj()}}
+{\footnotesize\ttfamily void ranking\+::cj (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption})}
+
+
+
+consulta el jugador de nombre p 
+
+\begin{DoxyPrecond}{Precondició}
+un nombre p 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el nombre, la posicion del ranking y los puntos de p 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classranking_a7c24e5d21c96d15118cbdad7d8ec40e9}\label{classranking_a7c24e5d21c96d15118cbdad7d8ec40e9}} 
+\index{ranking@{ranking}!bj@{bj}}
+\index{bj@{bj}!ranking@{ranking}}
+\doxysubsubsection{\texorpdfstring{bj()}{bj()}}
+{\footnotesize\ttfamily void ranking\+::bj (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption})}
+
+
+
+elimina a p de la lista 
+
+\begin{DoxyPrecond}{Precondició}
+un nombre p 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+p no existe en el ranking 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classranking_a1b3507bc6b09abc4ee312386c2de5996}\label{classranking_a1b3507bc6b09abc4ee312386c2de5996}} 
+\index{ranking@{ranking}!lr@{lr}}
+\index{lr@{lr}!ranking@{ranking}}
+\doxysubsubsection{\texorpdfstring{lr()}{lr()}}
+{\footnotesize\ttfamily void ranking\+::lr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+saca por la terminal la lista del ranking 
+
+\begin{DoxyPrecond}{Precondició}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+nombres, posiciones y puntos por orden del ranking 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classranking_a9e0506a5e30c8854368364db04ab68aa}\label{classranking_a9e0506a5e30c8854368364db04ab68aa}} 
+\index{ranking@{ranking}!lj@{lj}}
+\index{lj@{lj}!ranking@{ranking}}
+\doxysubsubsection{\texorpdfstring{lj()}{lj()}}
+{\footnotesize\ttfamily void ranking\+::lj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+crea una lista ordenada el orden alfabético y la saca por la terminal 
+
+\begin{DoxyPrecond}{Precondició}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+nombres, posiciones y puntos por orden alfabético 
+\end{DoxyPostcond}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ranking_8hh}{ranking.\+hh}}\end{DoxyCompactItemize}

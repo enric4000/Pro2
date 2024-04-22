@@ -1,0 +1,131 @@
+\hypertarget{classcircuito}{}\doxysection{Referència de la Classe circuito}
+\label{classcircuito}\index{circuito@{circuito}}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcircuito_a70ab5f0051a6fe9eef2565322956ee91}{circuito}} (int T)
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcircuito_a048cab627220bf14655f1d7cac5c7495}{at}} (const pair$<$ string, int $>$ \&par1)
+\begin{DoxyCompactList}\small\item\em añade t en la lista de torneos con nombre t y categoria c \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcircuito_a88bbecc3713c27a6b86b06c04133320c}{bt}} (string t)
+\begin{DoxyCompactList}\small\item\em borra t de la lista de torneos \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcircuito_a2e4273621382f6bca146af0f62eaa10b}{it}} (\mbox{\hyperlink{classranking}{ranking}} \&rank, string t)
+\begin{DoxyCompactList}\small\item\em encuentra t en la lista y inicia el torneo llamando a la función de la clase torneo \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcircuito_a89f736bc31aca7c0ce128caf39de9d35}{ft}} (\mbox{\hyperlink{classranking}{ranking}} \&rank, string t)
+\begin{DoxyCompactList}\small\item\em encuentra t en la lista de j, consulta sus jugadores y las calificaciones en el torneo de estos \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcircuito_aaf69520842d6b71aa222c1bd202806bb}{lt}} ()
+\begin{DoxyCompactList}\small\item\em consulta cada torneo de la lista \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+
+
+Definició a la línia 18 del fitxer circuito.\+hh.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{classcircuito_a70ab5f0051a6fe9eef2565322956ee91}\label{classcircuito_a70ab5f0051a6fe9eef2565322956ee91}} 
+\index{circuito@{circuito}!circuito@{circuito}}
+\index{circuito@{circuito}!circuito@{circuito}}
+\doxysubsubsection{\texorpdfstring{circuito()}{circuito()}}
+{\footnotesize\ttfamily circuito\+::circuito (\begin{DoxyParamCaption}\item[{int}]{T }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar un circuito. \begin{DoxyPrecond}{Precondició}
+{\itshape un numero inicial de torneos T} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultado es un circuito con T torneos 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{classcircuito_a048cab627220bf14655f1d7cac5c7495}\label{classcircuito_a048cab627220bf14655f1d7cac5c7495}} 
+\index{circuito@{circuito}!at@{at}}
+\index{at@{at}!circuito@{circuito}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily void circuito\+::at (\begin{DoxyParamCaption}\item[{const pair$<$ string, int $>$ \&}]{par1 }\end{DoxyParamCaption})}
+
+
+
+añade t en la lista de torneos con nombre t y categoria c 
+
+\begin{DoxyPrecond}{Precondició}
+nombre del torneo t 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el torneo añadido 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classcircuito_a88bbecc3713c27a6b86b06c04133320c}\label{classcircuito_a88bbecc3713c27a6b86b06c04133320c}} 
+\index{circuito@{circuito}!bt@{bt}}
+\index{bt@{bt}!circuito@{circuito}}
+\doxysubsubsection{\texorpdfstring{bt()}{bt()}}
+{\footnotesize\ttfamily void circuito\+::bt (\begin{DoxyParamCaption}\item[{string}]{t }\end{DoxyParamCaption})}
+
+
+
+borra t de la lista de torneos 
+
+\begin{DoxyPrecond}{Precondició}
+nombre del torneo t 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el torneo eleminado 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classcircuito_a2e4273621382f6bca146af0f62eaa10b}\label{classcircuito_a2e4273621382f6bca146af0f62eaa10b}} 
+\index{circuito@{circuito}!it@{it}}
+\index{it@{it}!circuito@{circuito}}
+\doxysubsubsection{\texorpdfstring{it()}{it()}}
+{\footnotesize\ttfamily void circuito\+::it (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classranking}{ranking}} \&}]{rank,  }\item[{string}]{t }\end{DoxyParamCaption})}
+
+
+
+encuentra t en la lista y inicia el torneo llamando a la función de la clase torneo 
+
+\begin{DoxyPrecond}{Precondició}
+ranking y nombre del torneo t 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el torneo finalizado 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classcircuito_a89f736bc31aca7c0ce128caf39de9d35}\label{classcircuito_a89f736bc31aca7c0ce128caf39de9d35}} 
+\index{circuito@{circuito}!ft@{ft}}
+\index{ft@{ft}!circuito@{circuito}}
+\doxysubsubsection{\texorpdfstring{ft()}{ft()}}
+{\footnotesize\ttfamily void circuito\+::ft (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classranking}{ranking}} \&}]{rank,  }\item[{string}]{t }\end{DoxyParamCaption})}
+
+
+
+encuentra t en la lista de j, consulta sus jugadores y las calificaciones en el torneo de estos 
+
+\begin{DoxyPrecond}{Precondició}
+ranking y nombre del torneo t 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+\+: saca por la terminal la tabla de los resultados 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classcircuito_aaf69520842d6b71aa222c1bd202806bb}\label{classcircuito_aaf69520842d6b71aa222c1bd202806bb}} 
+\index{circuito@{circuito}!lt@{lt}}
+\index{lt@{lt}!circuito@{circuito}}
+\doxysubsubsection{\texorpdfstring{lt()}{lt()}}
+{\footnotesize\ttfamily void circuito\+::lt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+consulta cada torneo de la lista 
+
+\begin{DoxyPrecond}{Precondició}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+saca todos los torneos por la terminal 
+\end{DoxyPostcond}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{circuito_8hh}{circuito.\+hh}}\end{DoxyCompactItemize}

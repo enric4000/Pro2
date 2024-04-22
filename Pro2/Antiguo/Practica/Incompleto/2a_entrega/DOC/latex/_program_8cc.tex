@@ -1,0 +1,113 @@
+\hypertarget{_program_8cc}{}\doxysection{Referència del Fitxer Program.\+cc}
+\label{_program_8cc}\index{Program.cc@{Program.cc}}
+
+
+programa main.  
+
+
+Inclou el graf de dependències per a Program.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{_program_8cc__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Definicions}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_program_8cc_a9844077078126ddbd0e0cb20f33cec67}{\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+C\+C\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funcions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+programa main. 
+
+
+
+\doxysubsection{Documentació de les Definicions}
+\mbox{\Hypertarget{_program_8cc_a9844077078126ddbd0e0cb20f33cec67}\label{_program_8cc_a9844077078126ddbd0e0cb20f33cec67}} 
+\index{Program.cc@{Program.cc}!\_PROGRAM\_CC\_@{\_PROGRAM\_CC\_}}
+\index{\_PROGRAM\_CC\_@{\_PROGRAM\_CC\_}!Program.cc@{Program.cc}}
+\doxysubsubsection{\texorpdfstring{\_PROGRAM\_CC\_}{\_PROGRAM\_CC\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+C\+C\+\_\+}
+
+
+
+Definició a la línia 7 del fitxer Program.\+cc.
+
+
+
+\doxysubsection{Documentació de les Funcions}
+\mbox{\Hypertarget{_program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Program.cc@{Program.cc}!main@{main}}
+\index{main@{main}!Program.cc@{Program.cc}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definició a la línia 17 del fitxer Program.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17           \{}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19   \textcolor{keywordtype}{int} M, A;}
+\DoxyCodeLine{20   \textcolor{keywordtype}{string} comand, clave, ida, idm;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     cin >> A;}
+\DoxyCodeLine{23   \mbox{\hyperlink{class_c_alfabetos}{CAlfabetos}} alfas(A);}
+\DoxyCodeLine{24   cin >> M;}
+\DoxyCodeLine{25   \mbox{\hyperlink{class_c_mensajes}{CMensajes}} mensas(M);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27   cin >> comand;}
+\DoxyCodeLine{28   \textcolor{keywordflow}{while}(comand != \textcolor{stringliteral}{"fin"})\{}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keywordflow}{if}(comand == \textcolor{stringliteral}{"nuevo\_mensaje"} or comand == \textcolor{stringliteral}{"nm"})\{}
+\DoxyCodeLine{31             ida = mensas.nm();}
+\DoxyCodeLine{32             alfas.incrementa(ida);}
+\DoxyCodeLine{33     \}}
+\DoxyCodeLine{34     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(comand == \textcolor{stringliteral}{"nuevo\_alfabeto"} or comand == \textcolor{stringliteral}{"na"}) \{}
+\DoxyCodeLine{35             alfas.na();}
+\DoxyCodeLine{36     \}}
+\DoxyCodeLine{37     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(comand == \textcolor{stringliteral}{"borra\_mensaje"} or comand == \textcolor{stringliteral}{"bm"}) \{}
+\DoxyCodeLine{38       ida = mensas.bm();}
+\DoxyCodeLine{39       alfas.decrementa(ida);}
+\DoxyCodeLine{40     \}}
+\DoxyCodeLine{41     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(comand == \textcolor{stringliteral}{"borra\_alfabeto"} or comand == \textcolor{stringliteral}{"ba"}) \{}
+\DoxyCodeLine{42             alfas.ba();}
+\DoxyCodeLine{43     \}}
+\DoxyCodeLine{44     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(comand == \textcolor{stringliteral}{"listar\_mensajes"} or comand == \textcolor{stringliteral}{"lm"}) \{}
+\DoxyCodeLine{45       mensas.lm();}
+\DoxyCodeLine{46     \}}
+\DoxyCodeLine{47     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(comand == \textcolor{stringliteral}{"listar\_alfabetos"} or comand == \textcolor{stringliteral}{"la"}) \{}
+\DoxyCodeLine{48       alfas.la();}
+\DoxyCodeLine{49     \}}
+\DoxyCodeLine{50     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(comand == \textcolor{stringliteral}{"codificar\_sustitucion\_guardado"} or comand == \textcolor{stringliteral}{"csg"}) \{}
+\DoxyCodeLine{51       mensas.codisusguard(alfas);}
+\DoxyCodeLine{52     \}}
+\DoxyCodeLine{53     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(comand == \textcolor{stringliteral}{"codificar\_sustitucion"} or comand == \textcolor{stringliteral}{"cl"}) \{}
+\DoxyCodeLine{54       mensas.codisus(alfas);}
+\DoxyCodeLine{55     \}}
+\DoxyCodeLine{56     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(comand == \textcolor{stringliteral}{"decodificar\_sustitución"} or comand == \textcolor{stringliteral}{"ds"}) \{}
+\DoxyCodeLine{57             alfas.decosus();}
+\DoxyCodeLine{58     \}}
+\DoxyCodeLine{59     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(comand == \textcolor{stringliteral}{"codificar\_permutacion\_guardado"} or comand == \textcolor{stringliteral}{"cpg"}) \{}
+\DoxyCodeLine{60             mensas.codipermuguard();}
+\DoxyCodeLine{61     \}}
+\DoxyCodeLine{62     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(comand == \textcolor{stringliteral}{"codificar\_permutacion"} or comand == \textcolor{stringliteral}{"cp"}) \{}
+\DoxyCodeLine{63             mensas.codipermu();}
+\DoxyCodeLine{64     \}}
+\DoxyCodeLine{65     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(comand == \textcolor{stringliteral}{"decodificar\_permutacion"} or comand == \textcolor{stringliteral}{"dp"}) \{}
+\DoxyCodeLine{66       mensas.decopermu();}
+\DoxyCodeLine{67     \}}
+\DoxyCodeLine{68     cin >> comand;}
+\DoxyCodeLine{69   \}}
+\DoxyCodeLine{70 \}}
+
+\end{DoxyCode}

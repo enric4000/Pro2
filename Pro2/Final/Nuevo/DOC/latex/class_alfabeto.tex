@@ -1,0 +1,419 @@
+\hypertarget{class_alfabeto}{}\doxysection{Referencia de la Clase Alfabeto}
+\label{class_alfabeto}\index{Alfabeto@{Alfabeto}}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_alfabeto_a218c7371b04d202f3c7bfbc2640f091a}{Alfabeto}} ()
+\begin{DoxyCompactList}\small\item\em Constructora de un alfabeto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alfabeto_a896edf0c7485b0cc409b818166a02ec7}{incrementa}} ()
+\begin{DoxyCompactList}\small\item\em Incrementa en uno su número de mensajes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alfabeto_a5561985e68dfe1014f7c24734caf96d7}{decrementa}} ()
+\begin{DoxyCompactList}\small\item\em Decrementa en uno su número de mensajes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_alfabeto_a040d74f851eaf17be8466df08815b22a}{escribir\+\_\+alfabeto}} () const
+\begin{DoxyCompactList}\small\item\em Escribe el \mbox{\hyperlink{class_alfabeto}{Alfabeto}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_alfabeto_a157d3f5c088d3f34eb9d8224bc026911}{esespecial}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve si es especial o no. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_alfabeto_a8967d7dfffee334e0b0dc8ad3c02705c}{comprobarmens}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve un booleano dependiendo de si le quedan mensajes o no. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_alfabeto_a6ee241fecedd4bd7c2779f2cb5e9e40d}{codificar\+\_\+sustitucion}} (char m, char c) const
+\begin{DoxyCompactList}\small\item\em Codifica el char m con c y la string a del alfabeto normal. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_alfabeto_a206d81ce5ca10001a010ce39af52d5ec}{codificar\+\_\+sustitucion\+\_\+especial}} (char m, char c) const
+\begin{DoxyCompactList}\small\item\em Codifica el char m con c y la string a del alfabeto especial. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_alfabeto_a38b49b978f8b0f851d44687bd11ded34}{decodificar\+\_\+sustitucion}} (char m, char c) const
+\begin{DoxyCompactList}\small\item\em Decodifica el char m con c y la string a del alfabeto normal. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_alfabeto_ac44018765c1b8031870906597f44effa}{decodificar\+\_\+sustitucion\+\_\+especial}} (char m, char c) const
+\begin{DoxyCompactList}\small\item\em Decodifica el char m con c y la string a del alfabeto especial. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}
+\item 
+int \mbox{\hyperlink{class_alfabeto_ac39ef553d90ea7ae86086aeec17a81aa}{Nummensa}}
+\item 
+bool \mbox{\hyperlink{class_alfabeto_a38f6ec3b0894e97eac15f7c6fe3a8205}{especial}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+
+
+Definición en la línea 16 del archivo Alfabeto.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_alfabeto_a218c7371b04d202f3c7bfbc2640f091a}\label{class_alfabeto_a218c7371b04d202f3c7bfbc2640f091a}} 
+\index{Alfabeto@{Alfabeto}!Alfabeto@{Alfabeto}}
+\index{Alfabeto@{Alfabeto}!Alfabeto@{Alfabeto}}
+\doxysubsubsection{\texorpdfstring{Alfabeto()}{Alfabeto()}}
+{\footnotesize\ttfamily Alfabeto\+::\+Alfabeto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora de un alfabeto. 
+
+Se ejecuta automáticamente al declarar un alfabeto. \begin{DoxyPrecond}{Precondición}
+{\itshape  Cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un alfabeto con string a leído, el número de mensajes o Nummensa = 0 y el bool especial true o false según lo sea. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 7 del archivo Alfabeto.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7                    \{}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9     \mbox{\hyperlink{class_alfabeto_a38f6ec3b0894e97eac15f7c6fe3a8205}{especial}} =  \textcolor{keyword}{true};}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}} = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{11     getline(cin, \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}});}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \textcolor{keywordtype}{int} k = 0;}
+\DoxyCodeLine{14     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; \mbox{\hyperlink{class_alfabeto_a38f6ec3b0894e97eac15f7c6fe3a8205}{especial}} and i < \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}.size()/2; ++i) \{}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[i]+\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}.size()-\/1-\/k != \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}.size()-\/i-\/1]) \mbox{\hyperlink{class_alfabeto_a38f6ec3b0894e97eac15f7c6fe3a8205}{especial}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{17         k +=2;}
+\DoxyCodeLine{18     \}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \mbox{\hyperlink{class_alfabeto_ac39ef553d90ea7ae86086aeec17a81aa}{Nummensa}} = 0;}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_alfabeto_a896edf0c7485b0cc409b818166a02ec7}\label{class_alfabeto_a896edf0c7485b0cc409b818166a02ec7}} 
+\index{Alfabeto@{Alfabeto}!incrementa@{incrementa}}
+\index{incrementa@{incrementa}!Alfabeto@{Alfabeto}}
+\doxysubsubsection{\texorpdfstring{incrementa()}{incrementa()}}
+{\footnotesize\ttfamily void Alfabeto\+::incrementa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Incrementa en uno su número de mensajes. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El entero Nummensa se incrementa en 1. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 23 del archivo Alfabeto.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                           \{}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     ++\mbox{\hyperlink{class_alfabeto_ac39ef553d90ea7ae86086aeec17a81aa}{Nummensa}};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alfabeto_a5561985e68dfe1014f7c24734caf96d7}\label{class_alfabeto_a5561985e68dfe1014f7c24734caf96d7}} 
+\index{Alfabeto@{Alfabeto}!decrementa@{decrementa}}
+\index{decrementa@{decrementa}!Alfabeto@{Alfabeto}}
+\doxysubsubsection{\texorpdfstring{decrementa()}{decrementa()}}
+{\footnotesize\ttfamily void Alfabeto\+::decrementa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Decrementa en uno su número de mensajes. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El entero Nummensa se decrementa en 1. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 29 del archivo Alfabeto.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29                           \{}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     -\/-\/\mbox{\hyperlink{class_alfabeto_ac39ef553d90ea7ae86086aeec17a81aa}{Nummensa}};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alfabeto_a040d74f851eaf17be8466df08815b22a}\label{class_alfabeto_a040d74f851eaf17be8466df08815b22a}} 
+\index{Alfabeto@{Alfabeto}!escribir\_alfabeto@{escribir\_alfabeto}}
+\index{escribir\_alfabeto@{escribir\_alfabeto}!Alfabeto@{Alfabeto}}
+\doxysubsubsection{\texorpdfstring{escribir\_alfabeto()}{escribir\_alfabeto()}}
+{\footnotesize\ttfamily void Alfabeto\+::escribir\+\_\+alfabeto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Escribe el \mbox{\hyperlink{class_alfabeto}{Alfabeto}}. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  La string a no está vacía } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Escribe el alfabeto de una forma o otra según si es especial o no, y imprime también el entero Nummensa. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 35 del archivo Alfabeto.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35                                        \{}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_alfabeto_a38f6ec3b0894e97eac15f7c6fe3a8205}{especial}}) \{}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39         cout << \textcolor{stringliteral}{"especial ["} << \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[0] << \textcolor{stringliteral}{".."}<< \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}.size()-\/1] << \textcolor{stringliteral}{"] "} << \mbox{\hyperlink{class_alfabeto_ac39ef553d90ea7ae86086aeec17a81aa}{Nummensa}} << \textcolor{stringliteral}{" mensajes"} << endl;}
+\DoxyCodeLine{40     \}}
+\DoxyCodeLine{41     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43         cout << \textcolor{stringliteral}{"normal \(\backslash\)""} << \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}} << \textcolor{stringliteral}{"\(\backslash\)" "} << \mbox{\hyperlink{class_alfabeto_ac39ef553d90ea7ae86086aeec17a81aa}{Nummensa}} << \textcolor{stringliteral}{" mensajes"} << endl;}
+\DoxyCodeLine{44     \}}
+\DoxyCodeLine{45 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alfabeto_a157d3f5c088d3f34eb9d8224bc026911}\label{class_alfabeto_a157d3f5c088d3f34eb9d8224bc026911}} 
+\index{Alfabeto@{Alfabeto}!esespecial@{esespecial}}
+\index{esespecial@{esespecial}!Alfabeto@{Alfabeto}}
+\doxysubsubsection{\texorpdfstring{esespecial()}{esespecial()}}
+{\footnotesize\ttfamily bool Alfabeto\+::esespecial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Devuelve si es especial o no. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna el valor del bool especial. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 47 del archivo Alfabeto.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                \{}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_alfabeto_a38f6ec3b0894e97eac15f7c6fe3a8205}{especial}};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alfabeto_a8967d7dfffee334e0b0dc8ad3c02705c}\label{class_alfabeto_a8967d7dfffee334e0b0dc8ad3c02705c}} 
+\index{Alfabeto@{Alfabeto}!comprobarmens@{comprobarmens}}
+\index{comprobarmens@{comprobarmens}!Alfabeto@{Alfabeto}}
+\doxysubsubsection{\texorpdfstring{comprobarmens()}{comprobarmens()}}
+{\footnotesize\ttfamily bool Alfabeto\+::comprobarmens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Devuelve un booleano dependiendo de si le quedan mensajes o no. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  Cert } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna si Nummensa $>$ 0 o no. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 53 del archivo Alfabeto.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                                   \{}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_alfabeto_ac39ef553d90ea7ae86086aeec17a81aa}{Nummensa}} > 0;}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alfabeto_a6ee241fecedd4bd7c2779f2cb5e9e40d}\label{class_alfabeto_a6ee241fecedd4bd7c2779f2cb5e9e40d}} 
+\index{Alfabeto@{Alfabeto}!codificar\_sustitucion@{codificar\_sustitucion}}
+\index{codificar\_sustitucion@{codificar\_sustitucion}!Alfabeto@{Alfabeto}}
+\doxysubsubsection{\texorpdfstring{codificar\_sustitucion()}{codificar\_sustitucion()}}
+{\footnotesize\ttfamily char Alfabeto\+::codificar\+\_\+sustitucion (\begin{DoxyParamCaption}\item[{char}]{m,  }\item[{char}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Codifica el char m con c y la string a del alfabeto normal. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  La string a del alfabeto no está vacía y los char m y c no están vacíos y existen en a. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna un char resultado de la codificación. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 59 del archivo Alfabeto.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59                                                        \{}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{char} s = \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{62     \textcolor{keywordtype}{int} i, j;}
+\DoxyCodeLine{63     i = j = 0;}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \textcolor{keywordflow}{for} (i = 0; \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[i] != c; ++i) \{}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[j] != m) ++j;}
+\DoxyCodeLine{68     \}}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[j] != m) \textcolor{keywordflow}{for} (j = j; \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[j] != m; ++j);}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72     s = \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[(i+j)\%\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}.size()];}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     \textcolor{keywordflow}{return} s;}
+\DoxyCodeLine{75 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alfabeto_a206d81ce5ca10001a010ce39af52d5ec}\label{class_alfabeto_a206d81ce5ca10001a010ce39af52d5ec}} 
+\index{Alfabeto@{Alfabeto}!codificar\_sustitucion\_especial@{codificar\_sustitucion\_especial}}
+\index{codificar\_sustitucion\_especial@{codificar\_sustitucion\_especial}!Alfabeto@{Alfabeto}}
+\doxysubsubsection{\texorpdfstring{codificar\_sustitucion\_especial()}{codificar\_sustitucion\_especial()}}
+{\footnotesize\ttfamily char Alfabeto\+::codificar\+\_\+sustitucion\+\_\+especial (\begin{DoxyParamCaption}\item[{char}]{m,  }\item[{char}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Codifica el char m con c y la string a del alfabeto especial. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  La string a del alfabeto no está vacía y los char m y c no están vacíos y existen en a. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna un char resultado de la codificación. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 77 del archivo Alfabeto.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77                                                                 \{}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[(m -\/\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[0] + c-\/\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[0]) \% \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}.size()];}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alfabeto_a38b49b978f8b0f851d44687bd11ded34}\label{class_alfabeto_a38b49b978f8b0f851d44687bd11ded34}} 
+\index{Alfabeto@{Alfabeto}!decodificar\_sustitucion@{decodificar\_sustitucion}}
+\index{decodificar\_sustitucion@{decodificar\_sustitucion}!Alfabeto@{Alfabeto}}
+\doxysubsubsection{\texorpdfstring{decodificar\_sustitucion()}{decodificar\_sustitucion()}}
+{\footnotesize\ttfamily char Alfabeto\+::decodificar\+\_\+sustitucion (\begin{DoxyParamCaption}\item[{char}]{m,  }\item[{char}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Decodifica el char m con c y la string a del alfabeto normal. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  La string a del alfabeto no especial no está vacía y los char m y c no están vacíos y existen en a. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna un char resultado de la decodificación. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 83 del archivo Alfabeto.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83                                                           \{}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85     \textcolor{keywordtype}{int} s = \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{86     \textcolor{keywordtype}{int} i, j;}
+\DoxyCodeLine{87     j = i = 0;}
+\DoxyCodeLine{88     \textcolor{keywordflow}{for} (i = 0; \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[i] != c; ++i) \{}
+\DoxyCodeLine{89         }
+\DoxyCodeLine{90         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[j] != m) ++j;}
+\DoxyCodeLine{91     \}}
+\DoxyCodeLine{92     }
+\DoxyCodeLine{93     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[j] != m) \textcolor{keywordflow}{for} (j = j; \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[j] != m; ++j);}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95     s = j -\/ i;}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97     \textcolor{keywordflow}{if} (s >= 0) \textcolor{keywordflow}{return} \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[s\%\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}.size()];}
+\DoxyCodeLine{98     \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[(s+\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}.size())\%\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}.size()];}
+\DoxyCodeLine{99 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alfabeto_ac44018765c1b8031870906597f44effa}\label{class_alfabeto_ac44018765c1b8031870906597f44effa}} 
+\index{Alfabeto@{Alfabeto}!decodificar\_sustitucion\_especial@{decodificar\_sustitucion\_especial}}
+\index{decodificar\_sustitucion\_especial@{decodificar\_sustitucion\_especial}!Alfabeto@{Alfabeto}}
+\doxysubsubsection{\texorpdfstring{decodificar\_sustitucion\_especial()}{decodificar\_sustitucion\_especial()}}
+{\footnotesize\ttfamily char Alfabeto\+::decodificar\+\_\+sustitucion\+\_\+especial (\begin{DoxyParamCaption}\item[{char}]{m,  }\item[{char}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Decodifica el char m con c y la string a del alfabeto especial. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape  La string a del alfabeto especial no está vacía y los char m y c no están vacíos y existen en a. } 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna un char resultado de la decodificación. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 101 del archivo Alfabeto.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101                                                                     \{}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103     \textcolor{keywordtype}{int} s = (m -\/ c);}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105     \textcolor{keywordflow}{if} (s >= 0) \textcolor{keywordflow}{return} \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[s\%\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}.size()];}
+\DoxyCodeLine{106     \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}[(s+\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}.size())\%\mbox{\hyperlink{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}{a}}.size()];}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}\label{class_alfabeto_afd8adf9ce3a20dfb3c23b9c493346f40}} 
+\index{Alfabeto@{Alfabeto}!a@{a}}
+\index{a@{a}!Alfabeto@{Alfabeto}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily string Alfabeto\+::a\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 20 del archivo Alfabeto.\+hh.
+
+\mbox{\Hypertarget{class_alfabeto_ac39ef553d90ea7ae86086aeec17a81aa}\label{class_alfabeto_ac39ef553d90ea7ae86086aeec17a81aa}} 
+\index{Alfabeto@{Alfabeto}!Nummensa@{Nummensa}}
+\index{Nummensa@{Nummensa}!Alfabeto@{Alfabeto}}
+\doxysubsubsection{\texorpdfstring{Nummensa}{Nummensa}}
+{\footnotesize\ttfamily int Alfabeto\+::\+Nummensa\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 21 del archivo Alfabeto.\+hh.
+
+\mbox{\Hypertarget{class_alfabeto_a38f6ec3b0894e97eac15f7c6fe3a8205}\label{class_alfabeto_a38f6ec3b0894e97eac15f7c6fe3a8205}} 
+\index{Alfabeto@{Alfabeto}!especial@{especial}}
+\index{especial@{especial}!Alfabeto@{Alfabeto}}
+\doxysubsubsection{\texorpdfstring{especial}{especial}}
+{\footnotesize\ttfamily bool Alfabeto\+::especial\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 22 del archivo Alfabeto.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_alfabeto_8hh}{Alfabeto.\+hh}}\item 
+\mbox{\hyperlink{_alfabeto_8cc}{Alfabeto.\+cc}}\end{DoxyCompactItemize}
